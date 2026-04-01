@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>IOAI 2026 — International Olympiad in Artificial Intelligence | Astana, Kazakhstan</title>
+<title>IOAI 2026 â International Olympiad in Artificial Intelligence | Astana, Kazakhstan</title>
 <meta name="description" content="3rd International Olympiad in Artificial Intelligence. August 2-8, 2026. Astana, Kazakhstan. Register now for the world's newest science olympiad.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -29,132 +29,33 @@ input,select,textarea,button{font-family:inherit}
 
 /* Nav */
 .nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,14,26,0.85);backdrop-filter:blur(20px);border-bottom:1px solid rgba(255,255,255,0.06)}
-.nav-inner{max-width:1200px;margin:0 auto;padding:0 32px;height:80px;display:flex;align-items:center;justify-content:space-between;font-weight:800;font-size:18px;letter-spacing:-0.5px}
-.nav-logo{display:flex;align-items:center;gap:10px;margin:0;cursor:pointer}
-.nav-logo-icon{width:24px;height:24px;display:flex;align-items:center;justify-content:center}
-.nav-links{display:flex;align-items:center;gap:16px;list-style:none}
-.nav-link{background:none;border:none;cursor:pointer;font-size:14px;color:rgba(255,255,255,0.7);transition:color 0.2s;font-weight:600}
+.nav-inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:64px}
+.nav-logo{display:flex;align-items:center;gap:10px;cursor:pointer}
+.nav-logo-icon{width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,#667eea,#764ba2);display:flex;align-items:center;justify-content:center}
+.nav-links{display:flex;align-items:center;gap:24px}
+.nav-link{cursor:pointer;font-size:14px;font-weight:500;color:rgba(255,255,255,0.7);transition:color 0.2s;background:none;border:none}
 .nav-link:hover{color:#fff}
-.btn-primary{padding:10px 20px;border-radius:8px;background:linear-gradient(135deg, #667eea, #764ba2);border:none;color:#fff;cursor:pointer;font-weight:700;font-size:14px;transition:transform 0.2s;}
-.btn-primary:hover{transform:translateY(-2px)}
-.btn-lang{background:none;border:none;cursor:pointer;color:rgba(255,255,255,0.7);display:flex;align-items:center;gap:6px;font-size:14px;font-weight:600;transition:color 0.2s}
-.btn-lang:hover{color:#fff}
+.btn-primary{padding:8px 20px;border-radius:8px;border:none;cursor:pointer;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;font-size:14px;font-weight:600;transition:transform 0.2s}
+.btn-primary:hover{transform:scale(1.03)}
+.btn-lang{padding:6px 14px;border-radius:8px;border:1px solid rgba(255,255,255,0.15);background:transparent;color:#fff;font-size:13px;font-weight:600;cursor:pointer;display:flex;align-items:center;gap:6px}
+
+/* Section base */
+.section{max-width:1200px;margin:0 auto;padding:100px 24px}
+.tag{display:inline-flex;align-items:center;gap:8px;padding:6px 16px;border-radius:20px;font-size:13px;font-weight:600;background:rgba(99,179,237,0.12);color:#63b3ed;margin-bottom:16px;letter-spacing:0.5px}
+.section-title{font-size:clamp(28px,4vw,44px);font-weight:800;margin-bottom:24px;letter-spacing:-1px}
 
 /* Hero */
-.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:80px 16px;position:relative;background:linear-gradient(180deg, rgba(10,14,26,1) 0%, rgba(20,25,50,0.8) 100%)}
-.hero-content{max-width:900px;z-index:2;position:relative}
-.hero-title{font-size:72px;font-weight:900;background:linear-gradient(135deg, #fff, #a5b4fc, #c084fc);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:24px}
-.hero-meta{display:flex;align-items:center;justify-content:center;gap:32px;margin-bottom:32px;flex-wrap:wrap;color:rgba(255,255,255,0.7)}
-.hero-buttons{display:flex;align-items:center;justify-content:center;gap:16px;margin-top:48px;flex-wrap:wrap}
-.btn-hero{padding:14px 32px;border-radius:12px;background:linear-gradient(135deg, #667eea, #764ba2);border:none;color:#fff;font-size:16px;font-weight:700;cursor:pointer;display:flex;align-items:center;gap:8px;transition:transform 0.2s;}
-.btn-hero:hover{transform:translateY(-4px)}
-.btn-hero-outline{padding:14px 32px;border-radius:12px;background:transparent;border:1px solid rgba(255,255,255,0.15);color:#fff;font-size:16px;font-weight:700;cursor:pointer;transition:all 0.2s}
-.btn-hero-outline:hover{background:rgba(255,255,255,0.05);border-color:rgba(255,255,255,0.3)}
-.scroll-hint{position:absolute;bottom:32px;left:50%;transform:translateX(-50%);cursor:pointer;animation:bounce 2s infinite}
-
-/* Section */
-.section{max-width:1200px;margin:0 auto;padding:0 32px}
-.tag{display:inline-flex;align-items:center;gap:6px;background:rgba(102,126,234,0.1);border:1px solid rgba(102,126,234,0.3);border-radius:24px;padding:6px 12px;margin-bottom:24px;font-size:12px;font-weight:700;color:#667eea;text-transform:uppercase;letter-spacing:0.5px}
-.section-title{font-size:48px;font-weight:900;margin-bottom:48px}
-
-/* About */
-.stats-grid{display:grid;grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));gap:16px;margin-top:48px}
-.stat-card{background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:24px;text-align:center}
-.stat-val{font-size:36px;font-weight:900;color:#667eea;margin-bottom:8px}
-.stat-label{font-size:14px;color:rgba(255,255,255,0.6)}
-
-/* Contests */
-.card{background:linear-gradient(135deg, rgba(102,126,234,0.05), rgba(118,75,162,0.05));border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:32px;margin-bottom:24px}
-.card-icon{width:48px;height:48px;border-radius:12px;background:linear-gradient(135deg, #667eea, #764ba2);display:flex;align-items:center;justify-content:center;margin-bottom:16px}
-.card h3{font-size:20px;font-weight:700;margin-bottom:12px}
-.card p{color:rgba(255,255,255,0.7);font-size:15px;line-height:1.6}
-
-/* Schedule */
-.schedule-item{display:flex;gap:32px;padding:24px 0;border-bottom:1px solid rgba(255,255,255,0.08)}
-.schedule-item:last-child{border-bottom:none}
-.schedule-date{font-weight:700;font-size:14px;color:rgba(255,255,255,0.5);min-width:100px}
-.schedule-item div:last-child{flex:1}
-.schedule-item h3{font-weight:700;font-size:16px;margin-bottom:2px}
-.schedule-item p{font-size:14px;color:rgba(255,255,255,0.5)}
-
-/* Venue */
-.feature-chip{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:8px;padding:10px 16px;margin-right:12px;margin-bottom:12px;font-size:14px}
-.feature-chip svg{width:20px;height:20px;color:#667eea}
-
-/* Register */
-.register-section{background:rgba(102,126,234,0.05)}
-.role-grid{display:grid;grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));gap:16px;margin-bottom:48px}
-.role-card{background:rgba(255,255,255,0.02);border:2px solid rgba(255,255,255,0.1);border-radius:12px;padding:24px;text-align:center;cursor:pointer;transition:all 0.2s}
-.role-card:hover{border-color:rgba(102,126,234,0.5);background:rgba(102,126,234,0.08)}
-.role-card.active{border-color:#667eea;background:rgba(102,126,234,0.15)}
-.role-icon{width:48px;height:48px;border-radius:12px;background:linear-gradient(135deg, #667eea, #764ba2);display:flex;align-items:center;justify-content:center;margin:0 auto 12px}
-.role-label{font-weight:700;font-size:16px;margin-bottom:8px}
-.role-desc{font-size:13px;color:rgba(255,255,255,0.6)}
-
-/* Form */
-.form-box{background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:48px;max-width:600px;margin:0 auto}
-.form-grid{display:grid;grid-template-columns:repeat(2, 1fr);gap:16px;margin-bottom:16px}
-.form-grid-2{display:grid;grid-template-columns:repeat(2, 1fr);gap:16px;margin-bottom:16px}
-.form-grid-2-1{display:grid;grid-template-columns:2fr 1fr;gap:16px;margin-bottom:16px}
-.form-grid-3{display:grid;grid-template-columns:repeat(3, 1fr);gap:16px;margin-bottom:16px}
-.form-grid > div{display:flex;flex-direction:column}
-.form-grid-2 > div{display:flex;flex-direction:column}
-.form-grid-2-1 > div{display:flex;flex-direction:column}
-.form-grid-3 > div{display:flex;flex-direction:column}
-.form-label{font-size:15px;font-weight:700;margin-bottom:8px;color:rgba(255,255,255,0.8)}
-.form-input{padding:12px 16px;border-radius:8px;border:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);color:#fff;font-size:14px;transition:all 0.2s}
-.form-input:focus{outline:none;border-color:rgba(102,126,234,0.5);background:rgba(102,126,234,0.08)}
-.form-input.error{border-color:#ef4444;background:rgba(239,68,68,0.08)}
-.form-input::placeholder{color:rgba(255,255,255,0.4)}
-.btn-submit{padding:12px 32px;border-radius:10px;background:linear-gradient(135deg, #667eea, #764ba2);border:none;color:#fff;font-weight:600;font-size:15px;cursor:pointer;width:100%;margin-top:16px;display:flex;align-items:center;justify-content:center;gap:8px;transition:transform 0.2s}
-.btn-submit:hover:not(:disabled){transform:translateY(-2px)}
-.btn-submit:disabled{opacity:0.6;cursor:not-allowed}
-
-/* Success */
-.success-box{text-align:center;background:rgba(34,197,94,0.08);border:1px solid rgba(34,197,94,0.25);border-radius:12px;padding:48px}
-.success-box svg{margin:0 auto 24px}
-.reg-id{background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.1);border-radius:8px;padding:16px;font-family:monospace;font-size:14px;margin:24px 0;word-break:break-all}
-
-/* Error */
-.error-box{background:rgba(239,68,68,0.08);border:1px solid rgba(239,68,68,0.25);border-radius:12px;padding:16px;margin-bottom:24px;text-align:center;color:#ef4444;font-weight:600}
-
-/* Spinner */
-.spinner{display:inline-block;width:16px;height:16px;border:2px solid rgba(255,255,255,0.2);border-top-color:#fff;border-radius:50%;animation:spin 0.6s linear infinite}
-
-/* Footer */
-.footer{background:rgba(10,14,26,0.95);border-top:1px solid rgba(255,255,255,0.08);padding:64px 32px;margin-top:120px}
-.footer-inner{max-width:1200px;margin:0 auto}
-.footer-grid{display:grid;grid-template-columns:repeat(3, 1fr);gap:48px;margin-bottom:48px}
-.footer-grid > div:first-child{grid-column:1/2}
-.footer-grid > div:nth-child(2){grid-column:2/3}
-.footer-grid > div:nth-child(3){grid-column:3/4}
-.footer-grid h4{font-weight:700;font-size:14px;margin-bottom:16px;color:rgba(255,255,255,0.8)}
-.footer-grid a{color:rgba(255,255,255,0.5);font-size:14px;display:block;margin-bottom:10px;transition:color 0.2s}
-.footer-grid a:hover{color:#fff}
-.social-link{display:inline-block;margin-right:12px}
-.footer-bottom{border-top:1px solid rgba(255,255,255,0.08);padding-top:24px;text-align:center;color:rgba(255,255,255,0.5);font-size:14px}
-
-/* Responsive */
-@media(max-width:768px){
-  .hero-title{font-size:48px}
-  .section-title{font-size:32px}
-  .form-grid,.form-grid-2,.form-grid-3{grid-template-columns:1fr}
-  .form-grid-2-1{grid-template-columns:1fr}
-  .hero-meta{gap:16px}
-  .footer-grid{grid-template-columns:1fr}
-  .footer-grid > div{grid-column:auto}
-}
-</style>
-</head>
-<body>
-<nav class="nav"><div class="nav-inner">
-  <div class="nav-logo" onclick="scrollTo('hero')"><div class="nav-logo-icon">🧠</div><span style="font-weight:800;font-size:18px;letter-spacing:-0.5px">IOAI 2026</span></div>
-  <div class="nav-links">
-    <button class="nav-link" onclick="scrollTo('about')">About</button>
-    <button class="nav-link" onclick="scrollTo('contests')">Contests</button>
-    <button class="nav-link" onclick="scrollTo('schedule')">Schedule</button>
-    <button class="btn-primary" onclick="scrollTo('register')">Register</button>
-    <button class="btn-lang" onclick="toggleLang()">🌐adow:0 4px 30px rgba(102,126,234,0.4);transition:transform 0.2s}
+.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;background:radial-gradient(ellipse at 50% 30%,rgba(102,126,234,0.15) 0%,transparent 60%),radial-gradient(ellipse at 80% 80%,rgba(118,75,162,0.1) 0%,transparent 50%)}
+.hero-content{text-align:center;z-index:10;padding:0 24px;max-width:800px}
+.hero-title{font-size:clamp(48px,10vw,96px);font-weight:900;line-height:0.95;background:linear-gradient(135deg,#fff 0%,#a5b4fc 50%,#c084fc 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:12px;letter-spacing:-2px}
+.hero-meta{display:flex;align-items:center;justify-content:center;gap:16px;margin-bottom:8px;flex-wrap:wrap;font-size:20px;color:rgba(255,255,255,0.8)}
+.hero-meta svg{flex-shrink:0}
+.countdown{display:flex;justify-content:center;gap:16px;margin:40px 0;flex-wrap:wrap}
+.countdown-item{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:16px 24px;min-width:80px;text-align:center;backdrop-filter:blur(10px)}
+.countdown-val{font-size:36px;font-weight:800;font-variant-numeric:tabular-nums;background:linear-gradient(135deg,#a5b4fc,#c084fc);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.countdown-label{font-size:12px;color:rgba(255,255,255,0.5);font-weight:600;text-transform:uppercase;letter-spacing:1px}
+.hero-buttons{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+.btn-hero{padding:14px 32px;border-radius:12px;border:none;cursor:pointer;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;font-size:16px;font-weight:700;display:flex;align-items:center;gap:8px;box-shadow:0 4px 30px rgba(102,126,234,0.4);transition:transform 0.2s}
 .btn-hero:hover{transform:scale(1.04)}
 .btn-hero-outline{padding:14px 32px;border-radius:12px;cursor:pointer;border:1px solid rgba(255,255,255,0.15);background:rgba(255,255,255,0.05);color:#fff;font-size:16px;font-weight:600}
 .scroll-hint{position:absolute;bottom:30px;left:50%;transform:translateX(-50%);cursor:pointer;animation:bounce 2s infinite}
@@ -247,24 +148,230 @@ select.form-input option{background:#1a1f2e}
   <symbol id="icon-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
   <symbol id="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4 12 14.01l-3-3"/></symbol>
   <symbol id="icon-ticket" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M13 5v2M13 17v2M13 11v2"/></symbol>
-  <symbol id="icon-grad" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z\"/><path d=\"M6 12v5c0 1.66 2.69 3 6 3s6-1.34 6-3v-5\"/></symbol>
-  <symbol id=\"icon-user\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2\"/><circle cx=\"12\" cy=\"7\" r=\"4\"/></symbol>
-  <symbol id=\"icon-heart\" viewBox=\"0 0 24 24\" fl=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z\"/></symbol>
-  <symbol id=\"icon-globe\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><path d=\"M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20M2 12h20\"/></symbol>
+  <symbol id="icon-grad" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 1.66 2.69 3 6 3s6-1.34 6-3v-5"/></symbol>
+  <symbol id="icon-user" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></symbol>
+  <symbol id="icon-heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></symbol>
+  <symbol id="icon-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20M2 12h20"/></symbol>
 </svg>
 
-<div id=\"app\"></div>
+<div id="app"></div>
 
 <script>
-const APPS_SCRIPT_URL = \"https://script.google.com/macros/s/AKfycbyUSYQFSTnmUwUpfRoK2LoouwHypRF5ihey_YaCml9yQmwR3bWNBRnzJHL6UyyNlRLh/exec\";
+const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyUSYQFSTnmUwUpfRoK2LoouwHypRF5ihey_YaCml9yQmwR3bWNBRnzJHL6UyyNlRLh/exec";
 
-const COUNTRIES = [\"Afghanistan\",\"Albania\",\"Algeria\",\"Argentina\",\"Armenia\",\"Australia\",\"Austria\",\"Azerbaijan\",\"Bahrain\",\"Bangladesh\",\"Belarus\",\"Belgium\",\"Bolivia\",\"Bosnia and Herzegovina\",\"Brazil\",\"Brunei\",\"Bulgaria\",\"Cambodia\",\"Canada\",\"Chile\",\"China\",\"Colombia\",\"Costa Rica\",\"Croatia\",\"Cuba\",\"Cyprus\",\"Czech Republic\",\"Denmark\",\"Ecuador\",\"Egypt\",\"Estonia\",\"Ethiopia\",\"Finland\",\"France\",\"Georgia\",\"Germany\",\"Ghana\",\"Greece\",\"Guatemala\",\"Hong Kong\",\"Hungary\",\"Iceland\",\"India\",\"Indonesia\",\"Iran\",\"Iraq\",\"Ireland\",\"Israel\",\"Italy\",\"Jamaica\",\"Japan\",\"Jordan\",\"Kazakhstan\",\"Kenya\",\"Kuwait\",\"Kyrgyzstan\",\"Latvia\",\"Lebanon\",\"Libya\",\"Lithuania\",\"Luxembourg\",\"Malaysia\",\"Maldives\",\"Mexico\",\"Moldova\",\"Mongolia\",\"Montenegro\",\"Morocco\",\"Myanmar\",\"Nepal\",\"Netherlands\",\"New Zealand\",\"Nigeria\",\"North Korea\",\"North Macedonia\",\"Norway\",\"Oman\",\"Pakistan\",\"Palestine\",\"Panama\",\"Paraguay\",\"Peru\",\"Philippines\",\"Poland\",\"Portugal\",\"Qatar\",\"Romania\",\"Russia\",\"Saudi Arabia\",\"Senegal\",\"Serbia\",\"Singapore\",\"Slovakia\",\"Slovenia\",\"South Africa\",\"South Korea\",\"Spain\",\"Sri Lanka\",\"Sweden\",\"Switzerland\",\"Syria\",\"Taiwan\",\"Tajikistan\",\"Tanzania\",\"Thailand\",\"Trinidad and Tobago\",\"Tunisia\",\"Turkey\",\"Turkmenistan\",\"UAE\",\"Uganda\",\"Ukraine\",\"United Kingdom\",\"United States\",\"Uruguay\",\"Uzbekistan\",\"Venezuela\",\"Vietnam\"];
+const COUNTRIES = ["Afghanistan","Albania","Algeria","Argentina","Armenia","Australia","Austria","Azerbaijan","Bahrain","Bangladesh","Belarus","Belgium","Bolivia","Bosnia and Herzegovina","Brazil","Brunei","Bulgaria","Cambodia","Canada","Chile","China","Colombia","Costa Rica","Croatia","Cuba","Cyprus","Czech Republic","Denmark","Ecuador","Egypt","Estonia","Ethiopia","Finland","France","Georgia","Germany","Ghana","Greece","Guatemala","Hong Kong","Hungary","Iceland","India","Indonesia","Iran","Iraq","Ireland","Israel","Italy","Jamaica","Japan","Jordan","Kazakhstan","Kenya","Kuwait","Kyrgyzstan","Latvia","Lebanon","Libya","Lithuania","Luxembourg","Malaysia","Maldives","Mexico","Moldova","Mongolia","Montenegro","Morocco","Myanmar","Nepal","Netherlands","New Zealand","Nigeria","North Korea","North Macedonia","Norway","Oman","Pakistan","Palestine","Panama","Paraguay","Peru","Philippines","Poland","Portugal","Qatar","Romania","Russia","Saudi Arabia","Senegal","Serbia","Singapore","Slovakia","Slovenia","South Africa","South Korea","Spain","Sri Lanka","Sweden","Switzerland","Syria","Taiwan","Tajikistan","Tanzania","Thailand","Trinidad and Tobago","Tunisia","Turkey","Turkmenistan","UAE","Uganda","Ukraine","United Kingdom","United States","Uruguay","Uzbekistan","Venezuela","Vietnam"];
 
 const T = {
   en: {
-    nav:{about:\"About\",contests:\"Contests\",schedule:\"Schedule\",register:\"Register\",lang:\"RU\"},
-    hero:{badge:\"3rd International Olympiad in Artificial Intelligence\",title:\"IOAI 2026\",subtitle:\"Astana, Kazakhstan\",dates:\"August 2\u2013 8, 2026\",cta:\"Get Your Pass\",learnMore:\"Learn More\"},
-    about:{tag:\"About the Olympiad\",title:\"The World's Newest Science Olympiad\",desc1:\"The International Olympiad in Artificial Intelligence (IOAI) brings together the brightest young minds from around the world to compete in AI and machine learning challenges.\",desc2:\"Each country participates with up to two teams of four students, guided by a team leader. The olympiad tests skills in machine learning, data science, and AI problem-solving.\",s1v:\"50+\",s1l:\"Countries\",s2v:\"400+\",s2l:\"Students\",s3v:\"7\",s3l:\"Days\",s4v:\"3rd\",s4l:\"Edition\"},
-    contests:{tag:\"Competition Format\",title:\"Three Unique Contests\",c1:{t:\"Individual Contest\",d:\"Participants solve AI and ML problems individually, demonstrating personal expertise in algorithm design, model training, and data analysis.\"},c2:{t:\"Team Challenge\",d:\"Teams collaborate on complex, multi-faceted AI problems that require coordination, diverse skills, and creative approaches.\"},c3:{t:\"GAITE Contest\",d:\"A unique format focusing on Generative AI and interactive tasks — pushing the boundaries of what's possible with modern AI systems.\"}},
-    schedule:{tag:\"Event Schedule\",title:\"Week at a Glance\",days:[{d:\"Aug 2\",t:\"Arrival & Registration\",s:\"Welcome ceremony and team registration\"},{d:\"Aug 3\",t:\"Opening Ceremony\",s:\"Official opening at EXPO Astana\"},{d:\"Aug 4\",t:\"Individual Contest\",s:\"Day-long individual AI challenge\"},{d:\"Aug 5\",t:\"Excursion Day\",s:\"Explore the beauty of Astana\"},{d:\"Aug 6\",t:\"Team Challenge\",s:\"Collaborative problem-solving\"},{d:\"Aug 7\",t:\"GAITE Contest\",s:\"Generative AI competition\"},{d:\"Aug 8\",t:\"Closing Ceremony\",s:\"Awards and farewell dinner\"}]},
-    venue:{tag:\"Host City\",title:\"Welcome to Astana\",desc:\"Kazakhstan's futuristic capital city is the perfect backdrop for an AI olympiad. As part of Kazakhstan's declared Year of Artificial Intelligence, Astana combines cutting-edge architecture with wa418\u0418 \u0438 \u0438\u043d\u0442\u0435\u0440\u0430\u043a\u0442\u0438\u0432\u043d\u044b\u0435 \u0437\u0430\u0434\u0430\u0447\u0438 \u2014 \u0440\u0430\u0441\u0448\u0438\u0440\u044f\u044f \u0433\u0440\u0430\u043d\u0438\u0446\u044b \u0432\u043e\u0437\u043c\u043e\u0436\u043d\u043e\u0441\u0442\u0435\u0439 \u0441\u043e\u0432\u0440\u0435\u043c\u0435\u043d\u043d\u044b\u0445 \u0441\u0438\u0441\u0442\u0435\u043c \u0418\u0418."}},\n    schedule:{tag:\"\u0420\u0430\u0441\u043f\u0438\u0441\u0430\u043d\u0438\u0435\",title:\"\u041d\u0435\u0434\u0435\u043b\u044f \u0432 \u0434\u0435\u0442\u0430\u043b\u044f\u0445\",days:[{d:\"2 \u0430\u0432\u0433\",t:\"\u041f\u0440\u0438\u0431\u044b\u0442\u0438\u0435 \u0438 \u0440\u0435\u0433\u0438\u0441\u0442\u0440\u0430\u0446\u0438\u044f\",s:\"\u0426\u0435\u0440\u0435\u043c\u043e\u043d\u0438\u044f \u043f\u0440\u0438\u0432\u0435\u0442\u0441\u0442\u0432\u0438\u044f\"},{d:\"3 \u0430\u0432\u0433\",t:\"\u0426\u0435\u0440\u0435\u043c\u043e\u043d\u0438\u044f \u043e\u0442\u043a\u0440\u044b\u0442\u0438\u044f\",s:\"\u041e\u0444\u0438\u0446\u0438\u0430\u043b\u044c\u043d\u043e\u0435 \u043e\u0442\u043a\u0440\u044b\u0442\u0438\u0435 \u043d\u0430 EXPO\"},{d:\"4 \u0430\u0432\u0433\",t:\"\u0418\u043d\u0434\u0438\u0432\u0438\u0434\u0443\u0430\u043b\u044c\u043d\u044b\u0439 \u043a\u043e\u043d\u043a\u0443\u0440\u0441\",s:\"\u0417\u0430\u0434\u0430\u0447\u0438 \u043f\u043e \u0418\u0418\"},{d:\"5 \u0430\u0432\u0433\",t:\"\u0414\u0435\u043d\u044c \u044d\u043a\u0441\u043a\u0443\u0440\u0441\u0438\u0439\",s:\"\u041a\u0440\u0430\u0441\u043e\u0442\u044b \u0410\u0441\u0442\u0430\u043d\u044b\"},{d:\"6 \u0430\u0432\u0433\",t:\"\u041a\u043e\u043c\u0430\u043d\u0434\u043d\u043e\u0435 \u0441\u043e\u0440\u0435\u0432\u043d\u043e\u0432\u0430\u043d\u0438\u0435\",s:\"\u0421\u043e\u0432\u043c\u0435\u0441\u0442\u043d\u043e\u0435 \u0440\u0435\u0448\u0435\u043d\u0438\u0435 \u0437\u0430\u0434\u0430\u0447\"},{d:\"7 \u0430\u0432\u0433\",t:\"\u041a\u043e\u043d\u043a\u0443\u0440\u0441 GAITE\",s:\"\u0413\u0435\u043d\u0435\u0440\u0430\u0442\u0438\u0432\u043d\u044b\u0439 \u0418\u0418\"},{d:\"8 \u0430\u0432\u0433\",t:\"\u0426\u0435\u0440\u0435\u043c\u043e\u043d\u0438\u044f \u0437\u0430\u043a\u0440\u044b\u0442\u0438\u044f\",s:\"\u041d\u0430\u0433\u0440\u0430\u0436\u0434\u0435\u043d\u0438\u0435 \u0438 \u0443\u0436\u0438\u043d\"}]},
+    nav:{about:"About",contests:"Contests",schedule:"Schedule",register:"Register",lang:"RU"},
+    hero:{badge:"3rd International Olympiad in Artificial Intelligence",title:"IOAI 2026",subtitle:"Astana, Kazakhstan",dates:"August 2\u20138, 2026",cta:"Get Your Pass",learnMore:"Learn More"},
+    about:{tag:"About the Olympiad",title:"The World's Newest Science Olympiad",desc1:"The International Olympiad in Artificial Intelligence (IOAI) brings together the brightest young minds from around the world to compete in AI and machine learning challenges.",desc2:"Each country participates with up to two teams of four students, guided by a team leader. The olympiad tests skills in machine learning, data science, and AI problem-solving.",s1v:"50+",s1l:"Countries",s2v:"400+",s2l:"Students",s3v:"7",s3l:"Days",s4v:"3rd",s4l:"Edition"},
+    contests:{tag:"Competition Format",title:"Three Unique Contests",c1:{t:"Individual Contest",d:"Participants solve AI and ML problems individually, demonstrating personal expertise in algorithm design, model training, and data analysis."},c2:{t:"Team Challenge",d:"Teams collaborate on complex, multi-faceted AI problems that require coordination, diverse skills, and creative approaches."},c3:{t:"GAITE Contest",d:"A unique format focusing on Generative AI and interactive tasks \u2014 pushing the boundaries of what\u2019s possible with modern AI systems."}},
+    schedule:{tag:"Event Schedule",title:"Week at a Glance",days:[{d:"Aug 2",t:"Arrival & Registration",s:"Welcome ceremony and team registration"},{d:"Aug 3",t:"Opening Ceremony",s:"Official opening at EXPO Astana"},{d:"Aug 4",t:"Individual Contest",s:"Day-long individual AI challenge"},{d:"Aug 5",t:"Excursion Day",s:"Explore the beauty of Astana"},{d:"Aug 6",t:"Team Challenge",s:"Collaborative problem-solving"},{d:"Aug 7",t:"GAITE Contest",s:"Generative AI competition"},{d:"Aug 8",t:"Closing Ceremony",s:"Awards and farewell dinner"}]},
+    venue:{tag:"Host City",title:"Welcome to Astana",desc:"Kazakhstan\u2019s futuristic capital city is the perfect backdrop for an AI olympiad. As part of Kazakhstan\u2019s declared Year of Artificial Intelligence, Astana combines cutting-edge architecture with warm Central Asian hospitality.",features:["World-class EXPO venue","Direct flights from major hubs","Rich cultural heritage","Safe & welcoming city"]},
+    reg:{tag:"Entry Pass",title:"Register for IOAI 2026",desc:"Select your role and fill out the form below. You\u2019ll receive a confirmation email with a QR code \u2014 your entry pass to the event.",roleSelect:"I am registering as...",roles:{competitor:{l:"Competitor",d:"Student participating",i:"grad"},coach:{l:"Coach / Leader",d:"Team leader or coach",i:"user"},parent:{l:"Parent / Guardian",d:"Parent of a student",i:"heart"},guest:{l:"Guest / Visitor",d:"Event visitor",i:"ticket"}},fn:"First Name",ln:"Last Name",em:"Email",ph:"Phone Number",co:"Country",ins:"School / University",insType:"Institution Type",school:"School",uni:"University",dob:"Date of Birth",ts:"T-shirt Size",diet:"Dietary Restrictions",dietOpts:{none:"None",vegetarian:"Vegetarian",vegan:"Vegan",halal:"Halal",other:"Other"},cn:"Student\u2019s Full Name",cr:"Relation to Student",msg:"Additional Message (optional)",submit:"Complete Registration",submitting:"Submitting...",success:"Registration confirmed! Check your email for confirmation and QR code.",successId:"Your registration ID:",inv:"Please enter a valid email",err:"Something went wrong. Please try again.",another:"Register another person"},
+    footer:{org:"Organized by",cpfed:"CPFED \u2014 Competitive Programming Federation of Kazakhstan",links:"Quick Links",official:"Official IOAI Website",contact:"Contact Us",follow:"Follow Us",rights:"\u00a9 2026 IOAI Astana. All rights reserved."},
+    cd:{d:"Days",h:"Hours",m:"Min",s:"Sec"}
+  },
+  ru: {
+    nav:{about:"\u041e \u043d\u0430\u0441",contests:"\u041a\u043e\u043d\u043a\u0443\u0440\u0441\u044b",schedule:"\u0420\u0430\u0441\u043f\u0438\u0441\u0430\u043d\u0438\u0435",register:"\u0420\u0435\u0433\u0438\u0441\u0442\u0440\u0430\u0446\u0438\u044f",lang:"EN"},
+    hero:{badge:"3-\u044f \u041c\u0435\u0436\u0434\u0443\u043d\u0430\u0440\u043e\u0434\u043d\u0430\u044f \u041e\u043b\u0438\u043c\u043f\u0438\u0430\u0434\u0430 \u043f\u043e \u0418\u0441\u043a\u0443\u0441\u0441\u0442\u0432\u0435\u043d\u043d\u043e\u043c\u0443 \u0418\u043d\u0442\u0435\u043b\u043b\u0435\u043a\u0442\u0443",title:"IOAI 2026",subtitle:"\u0410\u0441\u0442\u0430\u043d\u0430, \u041a\u0430\u0437\u0430\u0445\u0441\u0442\u0430\u043d",dates:"2\u20138 \u0430\u0432\u0433\u0443\u0441\u0442\u0430 2026",cta:"\u041f\u043e\u043b\u0443\u0447\u0438\u0442\u044c \u043f\u0440\u043e\u043f\u0443\u0441\u043a",learnMore:"\u041f\u043e\u0434\u0440\u043e\u0431\u043d\u0435\u0435"},
+    about:{tag:"\u041e\u0431 \u041e\u043b\u0438\u043c\u043f\u0438\u0430\u0434\u0435",title:"\u041d\u043e\u0432\u0435\u0439\u0448\u0430\u044f \u041c\u0435\u0436\u0434\u0443\u043d\u0430\u0440\u043e\u0434\u043d\u0430\u044f \u041d\u0430\u0443\u0447\u043d\u0430\u044f \u041e\u043b\u0438\u043c\u043f\u0438\u0430\u0434\u0430",desc1:"\u041c\u0435\u0436\u0434\u0443\u043d\u0430\u0440\u043e\u0434\u043d\u0430\u044f \u043e\u043b\u0438\u043c\u043f\u0438\u0430\u0434\u0430 \u043f\u043e \u0438\u0441\u043a\u0443\u0441\u0441\u0442\u0432\u0435\u043d\u043d\u043e\u043c\u0443 \u0438\u043d\u0442\u0435\u043b\u043b\u0435\u043a\u0442\u0443 (IOAI) \u043e\u0431\u044a\u0435\u0434\u0438\u043d\u044f\u0435\u0442 \u0442\u0430\u043b\u0430\u043d\u0442\u043b\u0438\u0432\u0435\u0439\u0448\u0438\u0445 \u043c\u043e\u043b\u043e\u0434\u044b\u0445 \u043b\u044e\u0434\u0435\u0439 \u0441\u043e \u0432\u0441\u0435\u0433\u043e \u043c\u0438\u0440\u0430 \u0434\u043b\u044f \u0441\u043e\u0440\u0435\u0432\u043d\u043e\u0432\u0430\u043d\u0438\u0439 \u0432 \u043e\u0431\u043b\u0430\u0441\u0442\u0438 \u0418\u0418 \u0438 \u043c\u0430\u0448\u0438\u043d\u043d\u043e\u0433\u043e \u043e\u0431\u0443\u0447\u0435\u043d\u0438\u044f.",desc2:"\u041a\u0430\u0436\u0434\u0430\u044f \u0441\u0442\u0440\u0430\u043d\u0430 \u0443\u0447\u0430\u0441\u0442\u0432\u0443\u0435\u0442 \u0434\u0432\u0443\u043c\u044f \u043a\u043e\u043c\u0430\u043d\u0434\u0430\u043c\u0438 \u0438\u0437 \u0447\u0435\u0442\u044b\u0440\u0451\u0445 \u0441\u0442\u0443\u0434\u0435\u043d\u0442\u043e\u0432 \u043f\u043e\u0434 \u0440\u0443\u043a\u043e\u0432\u043e\u0434\u0441\u0442\u0432\u043e\u043c \u0442\u0438\u043c\u043b\u0438\u0434\u0435\u0440\u0430. \u041e\u043b\u0438\u043c\u043f\u0438\u0430\u0434\u0430 \u043f\u0440\u043e\u0432\u0435\u0440\u044f\u0435\u0442 \u043d\u0430\u0432\u044b\u043a\u0438 \u0432 ML, \u0430\u043d\u0430\u043b\u0438\u0437\u0435 \u0434\u0430\u043d\u043d\u044b\u0445 \u0438 \u0440\u0435\u0448\u0435\u043d\u0438\u0438 \u0437\u0430\u0434\u0430\u0447 \u0418\u0418.",s1v:"50+",s1l:"\u0421\u0442\u0440\u0430\u043d",s2v:"400+",s2l:"\u0423\u0447\u0430\u0441\u0442\u043d\u0438\u043a\u043e\u0432",s3v:"7",s3l:"\u0414\u043d\u0435\u0439",s4v:"3-\u0439",s4l:"\u0412\u044b\u043f\u0443\u0441\u043a"},
+    contests:{tag:"\u0424\u043e\u0440\u043c\u0430\u0442 \u0441\u043e\u0440\u0435\u0432\u043d\u043e\u0432\u0430\u043d\u0438\u0439",title:"\u0422\u0440\u0438 \u0443\u043d\u0438\u043a\u0430\u043b\u044c\u043d\u044b\u0445 \u043a\u043e\u043d\u043a\u0443\u0440\u0441\u0430",c1:{t:"\u0418\u043d\u0434\u0438\u0432\u0438\u0434\u0443\u0430\u043b\u044c\u043d\u044b\u0439 \u043a\u043e\u043d\u043a\u0443\u0440\u0441",d:"\u0423\u0447\u0430\u0441\u0442\u043d\u0438\u043a\u0438 \u0440\u0435\u0448\u0430\u044e\u0442 \u0437\u0430\u0434\u0430\u0447\u0438 \u0418\u0418 \u0438 ML \u0438\u043d\u0434\u0438\u0432\u0438\u0434\u0443\u0430\u043b\u044c\u043d\u043e, \u0434\u0435\u043c\u043e\u043d\u0441\u0442\u0440\u0438\u0440\u0443\u044f \u044d\u043a\u0441\u043f\u0435\u0440\u0442\u0438\u0437\u0443 \u0432 \u0430\u043b\u0433\u043e\u0440\u0438\u0442\u043c\u0430\u0445 \u0438 \u0430\u043d\u0430\u043b\u0438\u0437\u0435 \u0434\u0430\u043d\u043d\u044b\u0445."},c2:{t:"\u041a\u043e\u043c\u0430\u043d\u0434\u043d\u043e\u0435 \u0441\u043e\u0440\u0435\u0432\u043d\u043e\u0432\u0430\u043d\u0438\u0435",d:"\u041a\u043e\u043c\u0430\u043d\u0434\u044b \u0441\u043e\u0432\u043c\u0435\u0441\u0442\u043d\u043e \u0440\u0435\u0448\u0430\u044e\u0442 \u0441\u043b\u043e\u0436\u043d\u044b\u0435 \u043c\u043d\u043e\u0433\u043e\u0433\u0440\u0430\u043d\u043d\u044b\u0435 \u0437\u0430\u0434\u0430\u0447\u0438 \u0418\u0418, \u0442\u0440\u0435\u0431\u0443\u044e\u0449\u0438\u0435 \u043a\u043e\u043e\u0440\u0434\u0438\u043d\u0430\u0446\u0438\u0438 \u0438 \u043a\u0440\u0435\u0430\u0442\u0438\u0432\u043d\u044b\u0445 \u043f\u043e\u0434\u0445\u043e\u0434\u043e\u0432."},c3:{t:"\u041a\u043e\u043d\u043a\u0443\u0440\u0441 GAITE",d:"\u0423\u043d\u0438\u043a\u0430\u043b\u044c\u043d\u044b\u0439 \u0444\u043e\u0440\u043c\u0430\u0442, \u043e\u0440\u0438\u0435\u043d\u0442\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u044b\u0439 \u043d\u0430 \u0433\u0435\u043d\u0435\u0440\u0430\u0442\u0438\u0432\u043d\u044b\u0439 \u0418\u0418 \u0438 \u0438\u043d\u0442\u0435\u0440\u0430\u043a\u0442\u0438\u0432\u043d\u044b\u0435 \u0437\u0430\u0434\u0430\u0447\u0438 \u2014 \u0440\u0430\u0441\u0448\u0438\u0440\u044f\u044f \u0433\u0440\u0430\u043d\u0438\u0446\u044b \u0432\u043e\u0437\u043c\u043e\u0436\u043d\u043e\u0441\u0442\u0435\u0439 \u0441\u043e\u0432\u0440\u0435\u043c\u0435\u043d\u043d\u044b\u0445 \u0441\u0438\u0441\u0442\u0435\u043c \u0418\u0418."}},
+    schedule:{tag:"\u0420\u0430\u0441\u043f\u0438\u0441\u0430\u043d\u0438\u0435",title:"\u041d\u0435\u0434\u0435\u043b\u044f \u0432 \u0434\u0435\u0442\u0430\u043b\u044f\u0445",days:[{d:"2 \u0430\u0432\u0433",t:"\u041f\u0440\u0438\u0431\u044b\u0442\u0438\u0435 \u0438 \u0440\u0435\u0433\u0438\u0441\u0442\u0440\u0430\u0446\u0438\u044f",s:"\u0426\u0435\u0440\u0435\u043c\u043e\u043d\u0438\u044f \u043f\u0440\u0438\u0432\u0435\u0442\u0441\u0442\u0432\u0438\u044f"},{d:"3 \u0430\u0432\u0433",t:"\u0426\u0435\u0440\u0435\u043c\u043e\u043d\u0438\u044f \u043e\u0442\u043a\u0440\u044b\u0442\u0438\u044f",s:"\u041e\u0444\u0438\u0446\u0438\u0430\u043b\u044c\u043d\u043e\u0435 \u043e\u0442\u043a\u0440\u044b\u0442\u0438\u0435 \u043d\u0430 EXPO"},{d:"4 \u0430\u0432\u0433",t:"\u0418\u043d\u0434\u0438\u0432\u0438\u0434\u0443\u0430\u043b\u044c\u043d\u044b\u0439 \u043a\u043e\u043d\u043a\u0443\u0440\u0441",s:"\u0417\u0430\u0434\u0430\u0447\u0438 \u043f\u043e \u0418\u0418"},{d:"5 \u0430\u0432\u0433",t:"\u0414\u0435\u043d\u044c \u044d\u043a\u0441\u043a\u0443\u0440\u0441\u0438\u0439",s:"\u041a\u0440\u0430\u0441\u043e\u0442\u044b \u0410\u0441\u0442\u0430\u043d\u044b"},{d:"6 \u0430\u0432\u0433",t:"\u041a\u043e\u043c\u0430\u043d\u0434\u043d\u043e\u0435 \u0441\u043e\u0440\u0435\u0432\u043d\u043e\u0432\u0430\u043d\u0438\u0435",s:"\u0421\u043e\u0432\u043c\u0435\u0441\u0442\u043d\u043e\u0435 \u0440\u0435\u0448\u0435\u043d\u0438\u0435 \u0437\u0430\u0434\u0430\u0447"},{d:"7 \u0430\u0432\u0433",t:"\u041a\u043e\u043d\u043a\u0443\u0440\u0441 GAITE",s:"\u0413\u0435\u043d\u0435\u0440\u0430\u0442\u0438\u0432\u043d\u044b\u0439 \u0418\u0418"},{d:"8 \u0430\u0432\u0433",t:"\u0426\u0435\u0440\u0435\u043c\u043e\u043d\u0438\u044f \u0437\u0430\u043a\u0440\u044b\u0442\u0438\u044f",s:"\u041d\u0430\u0433\u0440\u0430\u0436\u0434\u0435\u043d\u0438\u0435 \u0438 \u0443\u0436\u0438\u043d"}]},
+    venue:{tag:"\u0413\u043e\u0440\u043e\u0434-\u0445\u043e\u0437\u044f\u0438\u043d",title:"\u0414\u043e\u0431\u0440\u043e \u043f\u043e\u0436\u0430\u043b\u043e\u0432\u0430\u0442\u044c \u0432 \u0410\u0441\u0442\u0430\u043d\u0443",desc:"\u0424\u0443\u0442\u0443\u0440\u0438\u0441\u0442\u0438\u0447\u0435\u0441\u043a\u0430\u044f \u0441\u0442\u043e\u043b\u0438\u0446\u0430 \u041a\u0430\u0437\u0430\u0445\u0441\u0442\u0430\u043d\u0430 \u2014 \u0438\u0434\u0435\u0430\u043b\u044c\u043d\u0430\u044f \u043f\u043b\u043e\u0449\u0430\u0434\u043a\u0430 \u0434\u043b\u044f \u043e\u043b\u0438\u043c\u043f\u0438\u0430\u0434\u044b \u043f\u043e \u0418\u0418. \u0412 \u0440\u0430\u043c\u043a\u0430\u0445 \u0413\u043e\u0434\u0430 \u0438\u0441\u043a\u0443\u0441\u0441\u0442\u0432\u0435\u043d\u043d\u043e\u0433\u043e \u0438\u043d\u0442\u0435\u043b\u043b\u0435\u043a\u0442\u0430, \u0410\u0441\u0442\u0430\u043d\u0430 \u0441\u043e\u0447\u0435\u0442\u0430\u0435\u0442 \u0441\u043e\u0432\u0440\u0435\u043c\u0435\u043d\u043d\u0443\u044e \u0430\u0440\u0445\u0438\u0442\u0435\u043a\u0442\u0443\u0440\u0443 \u0441 \u0442\u0451\u043f\u043b\u044b\u043c \u0433\u043e\u0441\u0442\u0435\u043f\u0440\u0438\u0438\u043c\u0441\u0442\u0432\u043e\u043c.",features:["\u041f\u043b\u043e\u0449\u0430\u0434\u043a\u0430 EXPO","\u041f\u0440\u044f\u043c\u044b\u0435 \u0440\u0435\u0439\u0441\u044b","\u041a\u0443\u043b\u044c\u0442\u0443\u0440\u043d\u043e\u0435 \u043d\u0430\u0441\u043b\u0435\u0434\u0438\u0435","\u0411\u0435\u0437\u043e\u043f\u0430\u0441\u043d\u044b\u0439 \u0433\u043e\u0440\u043e\u0434"]},
+    reg:{tag:"\u0412\u0445\u043e\u0434\u043d\u043e\u0439 \u0431\u0438\u043b\u0435\u0442",title:"\u0420\u0435\u0433\u0438\u0441\u0442\u0440\u0430\u0446\u0438\u044f \u043d\u0430 IOAI 2026",desc:"\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0440\u043e\u043b\u044c \u0438 \u0437\u0430\u043f\u043e\u043b\u043d\u0438\u0442\u0435 \u0444\u043e\u0440\u043c\u0443. \u0412\u044b \u043f\u043e\u043b\u0443\u0447\u0438\u0442\u0435 email \u0441 QR-\u043a\u043e\u0434\u043e\u043c \u2014 \u0432\u0430\u0448\u0438\u043c \u0432\u0445\u043e\u0434\u043d\u044b\u043c \u0431\u0438\u043b\u0435\u0442\u043e\u043c.",roleSelect:"\u042f \u0440\u0435\u0433\u0438\u0441\u0442\u0440\u0438\u0440\u0443\u044e\u0441\u044c \u043a\u0430\u043a...",roles:{competitor:{l:"\u0423\u0447\u0430\u0441\u0442\u043d\u0438\u043a",d:"\u0421\u0442\u0443\u0434\u0435\u043d\u0442-\u0443\u0447\u0430\u0441\u0442\u043d\u0438\u043a",i:"grad"},coach:{l:"\u0422\u0440\u0435\u043d\u0435\u0440 / \u041b\u0438\u0434\u0435\u0440",d:"\u0422\u0438\u043c\u043b\u0438\u0434\u0435\u0440 \u0438\u043b\u0438 \u0442\u0440\u0435\u043d\u0435\u0440",i:"user"},parent:{l:"\u0420\u043e\u0434\u0438\u0442\u0435\u043b\u044c",d:"\u0420\u043e\u0434\u0438\u0442\u0435\u043b\u044c \u0443\u0447\u0430\u0441\u0442\u043d\u0438\u043a\u0430",i:"heart"},guest:{l:"\u0413\u043e\u0441\u0442\u044c",d:"\u041f\u043e\u0441\u0435\u0442\u0438\u0442\u0435\u043b\u044c",i:"ticket"}},fn:"\u0418\u043c\u044f",ln:"\u0424\u0430\u043c\u0438\u043b\u0438\u044f",em:"\u042d\u043b\u0435\u043a\u0442\u0440\u043e\u043d\u043d\u0430\u044f \u043f\u043e\u0447\u0442\u0430",ph:"\u0422\u0435\u043b\u0435\u0444\u043e\u043d",co:"\u0421\u0442\u0440\u0430\u043d\u0430",ins:"\u0428\u043a\u043e\u043b\u0430 / \u0423\u043d\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442",insType:"\u0422\u0438\u043f \u0443\u0447\u0440\u0435\u0436\u0434\u0435\u043d\u0438\u044f",school:"\u0428\u043a\u043e\u043b\u0430",uni:"\u0423\u043d\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442",dob:"\u0414\u0430\u0442\u0430 \u0440\u043e\u0436\u0434\u0435\u043d\u0438\u044f",ts:"\u0420\u0430\u0437\u043c\u0435\u0440 \u0444\u0443\u0442\u0431\u043e\u043b\u043a\u0438",diet:"\u041e\u0433\u0440\u0430\u043d\u0438\u0447\u0435\u043d\u0438\u044f \u0432 \u043f\u0438\u0442\u0430\u043d\u0438\u0438",dietOpts:{none:"\u041d\u0435\u0442",vegetarian:"\u0412\u0435\u0433\u0435\u0442\u0430\u0440\u0438\u0430\u043d\u0441\u043a\u043e\u0435",vegan:"\u0412\u0435\u0433\u0430\u043d\u0441\u043a\u043e\u0435",halal:"\u0425\u0430\u043b\u044f\u043b\u044c",other:"\u0414\u0440\u0443\u0433\u043e\u0435"},cn:"\u0424\u0418\u041e \u0443\u0447\u0430\u0441\u0442\u043d\u0438\u043a\u0430",cr:"\u041a\u0435\u043c \u043f\u0440\u0438\u0445\u043e\u0434\u0438\u0442\u0435\u0441\u044c",msg:"\u0421\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u0435 (\u043d\u0435\u043e\u0431\u044f\u0437\u0430\u0442\u0435\u043b\u044c\u043d\u043e)",submit:"\u0417\u0430\u0432\u0435\u0440\u0448\u0438\u0442\u044c \u0440\u0435\u0433\u0438\u0441\u0442\u0440\u0430\u0446\u0438\u044e",submitting:"\u041e\u0442\u043f\u0440\u0430\u0432\u043a\u0430...",success:"\u0420\u0435\u0433\u0438\u0441\u0442\u0440\u0430\u0446\u0438\u044f \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0435\u043d\u0430! \u041f\u0440\u043e\u0432\u0435\u0440\u044c\u0442\u0435 \u043f\u043e\u0447\u0442\u0443.",successId:"\u0412\u0430\u0448 ID:",inv:"\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u043a\u043e\u0440\u0440\u0435\u043a\u0442\u043d\u044b\u0439 email",err:"\u0427\u0442\u043e-\u0442\u043e \u043f\u043e\u0448\u043b\u043e \u043d\u0435 \u0442\u0430\u043a.",another:"\u0417\u0430\u0440\u0435\u0433\u0438\u0441\u0442\u0440\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0435\u0449\u0451"},
+    footer:{org:"\u041e\u0440\u0433\u0430\u043d\u0438\u0437\u0430\u0442\u043e\u0440",cpfed:"CPFED \u2014 \u0424\u0435\u0434\u0435\u0440\u0430\u0446\u0438\u044f \u0441\u043f\u043e\u0440\u0442\u0438\u0432\u043d\u043e\u0433\u043e \u043f\u0440\u043e\u0433\u0440\u0430\u043c\u043c\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u044f \u041a\u0430\u0437\u0430\u0445\u0441\u0442\u0430\u043d\u0430",links:"\u0421\u0441\u044b\u043b\u043a\u0438",official:"\u041e\u0444\u0438\u0446\u0438\u0430\u043b\u044c\u043d\u044b\u0439 \u0441\u0430\u0439\u0442 IOAI",contact:"\u0421\u0432\u044f\u0437\u0430\u0442\u044c\u0441\u044f",follow:"\u041f\u043e\u0434\u043f\u0438\u0441\u044b\u0432\u0430\u0439\u0442\u0435\u0441\u044c",rights:"\u00a9 2026 IOAI Astana. \u0412\u0441\u0435 \u043f\u0440\u0430\u0432\u0430 \u0437\u0430\u0449\u0438\u0449\u0435\u043d\u044b."},
+    cd:{d:"\u0414\u043d\u0435\u0439",h:"\u0427\u0430\u0441\u043e\u0432",m:"\u041c\u0438\u043d",s:"\u0421\u0435\u043a"}
+  }
+};
+
+function icon(name,size=18){return `<svg width="${size}" height="${size}"><use href="#icon-${name}"/></svg>`}
+
+let lang="en", selectedRole=null, submitState="idle", regResult=null;
+let formData={firstName:"",lastName:"",email:"",phone:"",country:"",institution:"",institutionType:"school",dateOfBirth:"",tshirtSize:"M",dietary:"none",childName:"",childRole:"",message:""};
+let errors={};
+
+function t(){return T[lang]}
+function scrollTo(id){document.getElementById(id)?.scrollIntoView({behavior:"smooth"})}
+function toggleLang(){lang=lang==="en"?"ru":"en";render();updateCountdown()}
+
+// Countdown
+let cd={days:0,hours:0,minutes:0,seconds:0};
+function updateCountdown(){
+  const diff=new Date("2026-08-02T09:00:00+06:00")-new Date();
+  if(diff>0){cd={days:Math.floor(diff/864e5),hours:Math.floor(diff%864e5/36e5),minutes:Math.floor(diff%36e5/6e4),seconds:Math.floor(diff%6e4/1e3)}}
+  const el=document.getElementById("countdown-container");
+  if(el){const c=t().cd;el.innerHTML=[[cd.days,c.d],[cd.hours,c.h],[cd.minutes,c.m],[cd.seconds,c.s]].map(([v,l])=>`<div class="countdown-item"><div class="countdown-val">${String(v).padStart(2,"0")}</div><div class="countdown-label">${l}</div></div>`).join("")}
+}
+setInterval(updateCountdown,1000);
+
+// Particles
+function particles(){return Array.from({length:25},(_,i)=>{const s=2+Math.random()*4;return `<div class="particle" style="width:${s}px;height:${s}px;background:rgba(${100+Math.random()*100|0},${150+Math.random()*100|0},255,${(0.15+Math.random()*0.25).toFixed(2)});left:${(Math.random()*100).toFixed(1)}%;bottom:-10px;animation-duration:${(15+Math.random()*20).toFixed(1)}s;animation-delay:${(Math.random()*20).toFixed(1)}s"></div>`}).join("")}
+
+function countryOptions(){return '<option value="" style="background:#1a1f2e">\u2014</option>'+COUNTRIES.map(c=>`<option value="${c}" style="background:#1a1f2e"${formData.country===c?" selected":""}>${c}</option>`).join("")}
+
+function validate(){
+  errors={};
+  if(!formData.firstName.trim())errors.firstName=1;
+  if(!formData.lastName.trim())errors.lastName=1;
+  if(!formData.email.trim())errors.email=1;
+  else if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email))errors.emailInvalid=1;
+  if(!formData.country)errors.country=1;
+  if(selectedRole==="competitor"&&!formData.institution.trim())errors.institution=1;
+  if(selectedRole==="parent"&&!formData.childName.trim())errors.childName=1;
+  return Object.keys(errors).length===0;
+}
+
+async function handleSubmit(e){
+  e.preventDefault();if(!validate()){render();return}
+  submitState="submitting";render();
+  try{
+    const res=await fetch(APPS_SCRIPT_URL,{method:"POST",body:JSON.stringify({...formData,role:selectedRole})});
+    const result=await res.json();
+    if(result.success){regResult=result;submitState="success";formData={firstName:"",lastName:"",email:"",phone:"",country:"",institution:"",institutionType:"school",dateOfBirth:"",tshirtSize:"M",dietary:"none",childName:"",childRole:"",message:""}}
+    else submitState="error";
+  }catch(err){console.error(err);submitState="error"}
+  render();
+}
+
+function selectRole(r){selectedRole=r;errors={};render()}
+
+function setField(key,val){formData[key]=val}
+
+function render(){
+  const r=t().reg, n=t().nav, h=t().hero, a=t().about, c=t().contests, s=t().schedule, v=t().venue, f=t().footer;
+
+  let roleCardsHtml=Object.entries(r.roles).map(([k,role])=>`<div class="role-card${selectedRole===k?" active":""}" onclick="selectRole('${k}')"><div class="role-icon">${icon(role.i,24)}</div><div class="role-label">${role.l}</div><div class="role-desc">${role.d}</div></div>`).join("");
+
+  let formHtml="";
+  if(selectedRole && (submitState==="idle"||submitState==="submitting")){
+    let extra="";
+    if(selectedRole==="competitor"){
+      extra=`<div class="form-grid form-grid-2-1"><div><label class="form-label">${r.ins} *</label><input class="form-input${errors.institution?" error":""}" value="${formData.institution}" oninput="setField('institution',this.value)"></div><div><label class="form-label">${r.insType}</label><select class="form-input" onchange="setField('institutionType',this.value)"><option value="school"${formData.institutionType==="school"?" selected":""}>${r.school}</option><option value="university"${formData.institutionType==="university"?" selected":""}>${r.uni}</option></select></div></div>
+      <div class="form-grid form-grid-3"><div><label class="form-label">${r.dob}</label><input type="date" class="form-input" value="${formData.dateOfBirth}" oninput="setField('dateOfBirth',this.value)"></div><div><label class="form-label">${r.ts}</label><select class="form-input" onchange="setField('tshirtSize',this.value)">${["XS","S","M","L","XL","XXL"].map(sz=>`<option value="${sz}"${formData.tshirtSize===sz?" selected":""}>${sz}</option>`).join("")}</select></div><div><label class="form-label">${r.diet}</label><select class="form-input" onchange="setField('dietary',this.value)">${Object.entries(r.dietOpts).map(([k,v])=>`<option value="${k}"${formData.dietary===k?" selected":""}>${v}</option>`).join("")}</select></div></div>`;
+    }
+    if(selectedRole==="coach"){
+      extra=`<div style="margin-bottom:16px"><label class="form-label">${r.ins}</label><input class="form-input" value="${formData.institution}" oninput="setField('institution',this.value)"></div>`;
+    }
+    if(selectedRole==="parent"){
+      extra=`<div class="form-grid form-grid-2"><div><label class="form-label">${r.cn} *</label><input class="form-input${errors.childName?" error":""}" value="${formData.childName}" oninput="setField('childName',this.value)"></div><div><label class="form-label">${r.cr}</label><input class="form-input" value="${formData.childRole}" oninput="setField('childRole',this.value)"></div></div>`;
+    }
+    formHtml=`<form class="form-box" onsubmit="handleSubmit(event)">
+      <div class="form-grid form-grid-2"><div><label class="form-label">${r.fn} *</label><input class="form-input${errors.firstName?" error":""}" value="${formData.firstName}" oninput="setField('firstName',this.value)"></div><div><label class="form-label">${r.ln} *</label><input class="form-input${errors.lastName?" error":""}" value="${formData.lastName}" oninput="setField('lastName',this.value)"></div></div>
+      <div class="form-grid form-grid-2"><div><label class="form-label">${r.em} *</label><input type="email" class="form-input${(errors.email||errors.emailInvalid)?" error":""}" value="${formData.email}" oninput="setField('email',this.value)">${errors.emailInvalid?`<span style="font-size:12px;color:#ef4444">${r.inv}</span>`:""}</div><div><label class="form-label">${r.ph}</label><input type="tel" class="form-input" value="${formData.phone}" oninput="setField('phone',this.value)" placeholder="+7 (7XX) XXX-XXXX"></div></div>
+      <div style="margin-bottom:16px"><label class="form-label">${r.co} *</label><select class="form-input${errors.country?" error":""}" onchange="setField('country',this.value)">${countryOptions()}</select></div>
+      ${extra}
+      <div style="margin-bottom:24px"><label class="form-label">${r.msg}</label><textarea rows="3" class="form-input" oninput="setField('message',this.value)">${formData.message}</textarea></div>
+      <button type="submit" class="btn-submit"${submitState==="submitting"?" disabled":""}>${submitState==="submitting"?`<span class="spinner"></span>${r.submitting}`:`${r.submit} ${icon("arrow-right",18)}`}</button>
+    </form>`;
+  }
+
+  let successHtml="";
+  if(submitState==="success"&&regResult){
+    const qr=`https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=${encodeURIComponent(regResult.registrationId)}`;
+    successHtml=`<div class="success-box">${icon("check",48)}<h3 style="font-size:22px;font-weight:700;margin:16px 0 12px;color:#22c55e">${r.success}</h3><p style="color:rgba(255,255,255,0.6);margin-bottom:16px">${r.successId}</p><div class="reg-id">${regResult.registrationId}</div><div style="margin-top:24px"><img src="${qr}" alt="QR Code" width="180" height="180" style="border-radius:12px;border:2px solid rgba(255,255,255,0.1)"></div><button onclick="submitState='idle';selectedRole=null;render()" style="margin-top:24px;padding:10px 24px;border-radius:10px;border:1px solid rgba(255,255,255,0.15);background:transparent;color:#fff;font-size:14px;font-weight:600;cursor:pointer">${r.another}</button></div>`;
+  }
+
+  let errorHtml="";
+  if(submitState==="error"){
+    errorHtml=`<div style="background:rgba(239,68,68,0.08);border:1px solid rgba(239,68,68,0.25);border-radius:12px;padding:16px;margin-bottom:24px;text-align:center;color:#ef4444;font-weight:600">${r.err}<button onclick="submitState='idle';render()" style="display:block;margin:12px auto 0;padding:8px 20px;border-radius:8px;border:1px solid rgba(239,68,68,0.3);background:transparent;color:#ef4444;cursor:pointer;font-size:13px">${lang==="en"?"Try again":"\u041f\u043e\u043f\u0440\u043e\u0431\u043e\u0432\u0430\u0442\u044c \u0441\u043d\u043e\u0432\u0430"}</button></div>`;
+  }
+
+  document.getElementById("app").innerHTML=`
+<!-- NAV -->
+<nav class="nav"><div class="nav-inner">
+  <div class="nav-logo" onclick="scrollTo('hero')"><div class="nav-logo-icon">${icon("brain",20)}</div><span style="font-weight:800;font-size:18px;letter-spacing:-0.5px">IOAI 2026</span></div>
+  <div class="nav-links">
+    <button class="nav-link" onclick="scrollTo('about')">${n.about}</button>
+    <button class="nav-link" onclick="scrollTo('contests')">${n.contests}</button>
+    <button class="nav-link" onclick="scrollTo('schedule')">${n.schedule}</button>
+    <button class="btn-primary" onclick="scrollTo('register')">${n.register}</button>
+    <button class="btn-lang" onclick="toggleLang()">${icon("globe",14)}${n.lang}</button>
+  </div>
+</div></nav>
+
+<!-- HERO -->
+<section id="hero" class="hero">
+  <div style="position:absolute;inset:0;overflow:hidden;pointer-events:none">${particles()}</div>
+  <div class="hero-content">
+    <div class="tag" style="margin:0 auto 24px">${icon("sparkles",14)}${h.badge}</div>
+    <h1 class="hero-title">${h.title}</h1>
+    <div class="hero-meta"><span style="display:flex;align-items:center;gap:6px">${icon("map-pin")}${h.subtitle}</span><span style="display:flex;align-items:center;gap:6px">${icon("calendar")}${h.dates}</span></div>
+    <div id="countdown-container" class="countdown"></div>
+    <div class="hero-buttons">
+      <button class="btn-hero" onclick="scrollTo('register')">${h.cta} ${icon("arrow-right")}</button>
+      <button class="btn-hero-outline" onclick="scrollTo('about')">${h.learnMore}</button>
+    </div>
+  </div>
+  <div class="scroll-hint" onclick="scrollTo('about')">${icon("chevron-down",28)}</div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" style="background:rgba(255,255,255,0.02)"><div class="section">
+  <div class="tag">${icon("star",14)}${a.tag}</div>
+  <h2 class="section-title">${a.title}</h2>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:40px">
+    <div><p style="font-size:17px;line-height:1.8;color:rgba(255,255,255,0.7);margin-bottom:20px">${a.desc1}</p><p style="font-size:17px;line-height:1.8;color:rgba(255,255,255,0.7)">${a.desc2}</p></div>
+    <div class="stats-grid">
+      ${[[a.s1v,a.s1l,"#667eea"],[a.s2v,a.s2l,"#764ba2"],[a.s3v,a.s3l,"#06b6d4"],[a.s4v,a.s4l,"#a855f7"]].map(([v,l,c])=>`<div class="stat-card"><div class="stat-val" style="color:${c}">${v}</div><div class="stat-label">${l}</div></div>`).join("")}
+    </div>
+  </div>
+</div></section>
+
+<!-- CONTESTS -->
+<section id="contests"><div class="section">
+  <div class="tag">${icon("trophy",14)}${c.tag}</div>
+  <h2 class="section-title" style="margin-bottom:48px">${c.title}</h2>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px">
+    ${[{ic:"cpu",g:"linear-gradient(135deg,#667eea,#764ba2)",...c.c1},{ic:"users",g:"linear-gradient(135deg,#06b6d4,#3b82f6)",...c.c2},{ic:"sparkles",g:"linear-gradient(135deg,#a855f7,#ec4899)",...c.c3}].map(x=>`<div class="card"><div class="card-icon" style="background:${x.g}">${icon(x.ic,28)}</div><h3>${x.t}</h3><p>${x.d}</p></div>`).join("")}
+  </div>
+</div></section>
+
+<!-- SCHEDULE -->
+<section id="schedule" style="background:rgba(255,255,255,0.02)"><div class="section">
+  <div class="tag">${icon("calendar",14)}${s.tag}</div>
+  <h2 class="section-title" style="margin-bottom:48px">${s.title}</h2>
+  <div style="display:flex;flex-direction:column;gap:12px">
+    ${s.days.map(d=>`<div class="schedule-item"><div class="schedule-date">${d.d}</div><div><div style="font-weight:700;font-size:16px;margin-bottom:2px">${d.t}</div><div style="font-size:14px;color:rgba(255,255,255,0.5)">${d.s}</div></div></div>`).join("")}
+  </div>
+</div></section>
+
+<!-- VENUE -->
+<section id="venue"><div class="section">
+  <div class="tag">${icon("map-pin",14)}${v.tag}</div>
+  <h2 class="section-title">${v.title}</h2>
+  <p style="font-size:17px;line-height:1.8;color:rgba(255,255,255,0.7);max-width:700px;margin-bottom:32px">${v.desc}</p>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px">
+    ${v.features.map(f=>`<div class="feature-chip">${icon("check",18)}${f}</div>`).join("")}
+  </div>
+</div></section>
+
+<!-- REGISTER -->
+<section id="register" class="register-section"><div class="section" style="max-width:780px">
+  <div style="text-align:center;margin-bottom:48px">
+    <div class="tag" style="margin:0 auto 16px">${icon("ticket",14)}${r.tag}</div>
+    <h2 class="section-title" style="margin-bottom:16px">${r.title}</h2>
+    <p style="font-size:17px;color:rgba(255,255,255,0.6);line-height:1.7">${r.desc}</p>
+  </div>
+  ${successHtml}${errorHtml}
+  ${submitState==="idle"||submitState==="submitting"?`<p style="font-size:15px;font-weight:700;margin-bottom:16px;color:rgba(255,255,255,0.8)">${r.roleSelect}</p><div class="role-grid">${roleCardsHtml}</div>${formHtml}`:""}
+</div></section>
+
+<!-- FOOTER -->
+<footer class="footer"><div class="footer-inner">
+  <div class="footer-grid">
+    <div><div style="display:flex;align-items:center;gap:10px;margin-bottom:16px"><div class="nav-logo-icon">${icon("brain",20)}</div><span style="font-weight:800;font-size:18px">IOAI 2026</span></div><p style="font-size:14px;color:rgba(255,255,255,0.5);line-height:1.7">${f.org}<br>${f.cpfed}</p></div>
+    <div><h4 style="font-weight:700;font-size:14px;margin-bottom:16px;color:rgba(255,255,255,0.8)">${f.links}</h4><div style="display:flex;flex-direction:column;gap:10px"><a href="https://ioai-official.org" target="_blank" style="color:rgba(255,255,255,0.5);font-size:14px">${f.official}</a><a href="mailto:info@ioai2026.kz" style="color:rgba(255,255,255,0.5);font-size:14px">${f.contact}</a></div></div>
+    <div><h4 style="font-weight:700;font-size:14px;margin-bottom:16px;color:rgba(255,255,255,0.8)">${f.follow}</h4><div style="display:flex;gap:12px">${["Instagram","X","Facebook"].map(s=>`<a href="#" class="social-link">${s}</a>`).join("")}</div></div>
+  </div>
+  <div class="footer-bottom">${f.rights}</div>
+</div></footer>`;
+  updateCountdown();
+}
+
+// Initial render
+render();
+</script>
+</body>
+</html>
