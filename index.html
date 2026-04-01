@@ -276,16 +276,7 @@ function render(){
   let errorHtml="";
   if(submitState==="error"){
     errorHtml=`<div style="background:rgba(239,68,68,0.08);border:1px solid rgba(239,68,68,0.25);border-radius:12px;padding:16px;margin-bottom:24px;text-align:center;color:#ef4444;font-weight:600">${r.err}<button onclick="submitState='idle';render()" style="display:block;margin:12px auto 0;padding:8px 20px;border-radius:8px;border:1px solid rgba(239,68,68,0.3);background:transparent;color:#ef4444;cursor:pointer;font-size:13px">${lang==="en"?"Try again":"\u041f\u043e\u043f\u0440\u043e\u0431\u043e\u0432\u0430\u0442\u044c \u0441\u043d\u043e\u0432\u0430"}</button></div>`;
-      const duplicateHtml = submitState==="duplicate" ? `
-        <div style="text-align:center;padding:2rem;">
-          <div style="width:64px;height:64px;border-radius:50%;background:rgba(245,158,11,0.2);display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;">
-            <svg width="32" height="32" fill="none" stroke="#f59e0b" stroke-width="2" viewBox="0 0 24 24"><path d="M12 9v2m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-          </div>
-          <h3 style="font-size:1.3rem;font-weight:700;color:#f59e0b;margin-bottom:0.5rem;">Already Registered</h3>
-          <p style="color:#94a3b8;margin-bottom:1rem;">This email address has already been registered for IOAI 2026.</p>
-          <button onclick="submitState='idle';this.closest('[id]').querySelector('form').reset();document.getElementById('register').scrollIntoView({behavior:'smooth'})" style="padding:0.6rem 1.5rem;background:rgba(245,158,11,0.2);color:#f59e0b;border:1px solid rgba(245,158,11,0.3);border-radius:8px;cursor:pointer;font-weight:600;">Try Another Email</button>
-        </div>
-      ` : '';
+      let duplicateHtml = submitState==="duplicate" ? `<div style="text-align:center;padding:2rem;"><div style="width:64px;height:64px;border-radius:50%;background:rgba(245,158,11,0.2);display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;"><svg width="32" height="32" fill="none" stroke="#f59e0b" stroke-width="2" viewBox="0 0 24 24"><path d="M12 9v2m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div><h3 style="font-size:1.3rem;font-weight:700;color:#f59e0b;margin-bottom:0.5rem;">Already Registered</h3><p style="color:#94a3b8;margin-bottom:1rem;">This email has already been registered for IOAI 2026.</p><button onclick="submitState='idle';document.getElementById('register').scrollIntoView({behavior:'smooth'})" style="padding:0.6rem 1.5rem;background:rgba(245,158,11,0.2);color:#f59e0b;border:1px solid rgba(245,158,11,0.3);border-radius:8px;cursor:pointer;font-weight:600;">Try Another Email</button></div>` : '';
   }
 
   document.getElementById("app").innerHTML=`
