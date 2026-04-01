@@ -1,23 +1,270 @@
 <!DOCTYPE html>
-  <html lang="en">
-  <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>IOAI 2026 – International Olympiad in Artificial Intelligence | Astana, Kazakhstan</title>
-  <meta name="description" content="3rd International Olympiad in Artificial Intelligence. August 2-8, 2026. Astana, Kazakhstan. Register now for the world's newest science olympiad.">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <style>
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-body { font-family: 'Inter',-apple-system,BlinkMacSystemFont,sans-serif; background: #0a0e1a; color: #e2e8f0; min-height: 100vh; }
-.nav { position: fixed; top: 0; width: 100%; z-index: 100; background: rgba(10,14,26,.85); border-bottom: 1px solid rgba(255,255,255,.06); }
-.nav-inner { max-width: 1200px; margin: 0 auto; padding: 0 24px; height: 64px; display: flex; align-items: center; font-weight: 800; font-size: 18px; }
-.hero { min-height: 100vh; display: flex; align-items: center; justify-content: center; }
-.hero-title { font-size: 72px; font-weight: 900; background: linear-gradient(135deg,#fff 0%,#a5b4fc 50%,#c084fc 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 12px; }
-  </style>
-  </head>
-  <body>
-  <nav class="nav"><div class="nav-inner">IOAI 2026</div></nav>
-  <section class="hero"><div style="text-align:center"><h1 class="hero-title">IOAI 2026</h1><p style="font-size:20px;margin:20px 0">Astana, Kazakhstan</p><p style="color:rgba(255,255,255,.6)">International Olympiad in Artificial Intelligence</p></div></section>
-<script>console.log('IOAI 2026 landing page loaded successfully');</script>
-</body>
-  </html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IOAI 2026 — International Olympiad in Artificial Intelligence | Astana, Kazakhstan</title>
+<meta name="description" content="3rd International Olympiad in Artificial Intelligence. August 2-8, 2026. Astana, Kazakhstan. Register now for the world's newest science olympiad.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;background:#0a0e1a;color:#e2e8f0;min-height:100vh;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+::selection{background:rgba(102,126,234,0.4)}
+input,select,textarea,button{font-family:inherit}
+::-webkit-scrollbar{width:8px}
+::-webkit-scrollbar-track{background:#0a0e1a}
+::-webkit-scrollbar-thumb{background:rgba(255,255,255,0.1);border-radius:4px}
+
+/* Animations */
+@keyframes floatUp{0%{transform:translateY(0) scale(1);opacity:0}10%{opacity:1}90%{opacity:1}100%{transform:translateY(-110vh) scale(0.5);opacity:0}}
+@keyframes bounce{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(10px)}}
+@keyframes fadeIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes gradientShift{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+
+/* Particle */
+.particle{position:absolute;border-radius:50%;animation:floatUp linear infinite}
+
+/* Nav */
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,14,26,0.85);backdrop-filter:blur(20px);border-bottom:1px solid rgba(255,255,255,0.06)}
+.nav-inner{max-width:1200px;margin:0 auto;padding:0 32px;height:80px;display:flex;align-items:center;justify-content:space-between;font-weight:800;font-size:18px;letter-spacing:-0.5px}
+.nav-logo{display:flex;align-items:center;gap:10px;margin:0;cursor:pointer}
+.nav-logo-icon{width:24px;height:24px;display:flex;align-items:center;justify-content:center}
+.nav-links{display:flex;align-items:center;gap:16px;list-style:none}
+.nav-link{background:none;border:none;cursor:pointer;font-size:14px;color:rgba(255,255,255,0.7);transition:color 0.2s;font-weight:600}
+.nav-link:hover{color:#fff}
+.btn-primary{padding:10px 20px;border-radius:8px;background:linear-gradient(135deg, #667eea, #764ba2);border:none;color:#fff;cursor:pointer;font-weight:700;font-size:14px;transition:transform 0.2s;}
+.btn-primary:hover{transform:translateY(-2px)}
+.btn-lang{background:none;border:none;cursor:pointer;color:rgba(255,255,255,0.7);display:flex;align-items:center;gap:6px;font-size:14px;font-weight:600;transition:color 0.2s}
+.btn-lang:hover{color:#fff}
+
+/* Hero */
+.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:80px 16px;position:relative;background:linear-gradient(180deg, rgba(10,14,26,1) 0%, rgba(20,25,50,0.8) 100%)}
+.hero-content{max-width:900px;z-index:2;position:relative}
+.hero-title{font-size:72px;font-weight:900;background:linear-gradient(135deg, #fff, #a5b4fc, #c084fc);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:24px}
+.hero-meta{display:flex;align-items:center;justify-content:center;gap:32px;margin-bottom:32px;flex-wrap:wrap;color:rgba(255,255,255,0.7)}
+.hero-buttons{display:flex;align-items:center;justify-content:center;gap:16px;margin-top:48px;flex-wrap:wrap}
+.btn-hero{padding:14px 32px;border-radius:12px;background:linear-gradient(135deg, #667eea, #764ba2);border:none;color:#fff;font-size:16px;font-weight:700;cursor:pointer;display:flex;align-items:center;gap:8px;transition:transform 0.2s;}
+.btn-hero:hover{transform:translateY(-4px)}
+.btn-hero-outline{padding:14px 32px;border-radius:12px;background:transparent;border:1px solid rgba(255,255,255,0.15);color:#fff;font-size:16px;font-weight:700;cursor:pointer;transition:all 0.2s}
+.btn-hero-outline:hover{background:rgba(255,255,255,0.05);border-color:rgba(255,255,255,0.3)}
+.scroll-hint{position:absolute;bottom:32px;left:50%;transform:translateX(-50%);cursor:pointer;animation:bounce 2s infinite}
+
+/* Section */
+.section{max-width:1200px;margin:0 auto;padding:0 32px}
+.tag{display:inline-flex;align-items:center;gap:6px;background:rgba(102,126,234,0.1);border:1px solid rgba(102,126,234,0.3);border-radius:24px;padding:6px 12px;margin-bottom:24px;font-size:12px;font-weight:700;color:#667eea;text-transform:uppercase;letter-spacing:0.5px}
+.section-title{font-size:48px;font-weight:900;margin-bottom:48px}
+
+/* About */
+.stats-grid{display:grid;grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));gap:16px;margin-top:48px}
+.stat-card{background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:24px;text-align:center}
+.stat-val{font-size:36px;font-weight:900;color:#667eea;margin-bottom:8px}
+.stat-label{font-size:14px;color:rgba(255,255,255,0.6)}
+
+/* Contests */
+.card{background:linear-gradient(135deg, rgba(102,126,234,0.05), rgba(118,75,162,0.05));border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:32px;margin-bottom:24px}
+.card-icon{width:48px;height:48px;border-radius:12px;background:linear-gradient(135deg, #667eea, #764ba2);display:flex;align-items:center;justify-content:center;margin-bottom:16px}
+.card h3{font-size:20px;font-weight:700;margin-bottom:12px}
+.card p{color:rgba(255,255,255,0.7);font-size:15px;line-height:1.6}
+
+/* Schedule */
+.schedule-item{display:flex;gap:32px;padding:24px 0;border-bottom:1px solid rgba(255,255,255,0.08)}
+.schedule-item:last-child{border-bottom:none}
+.schedule-date{font-weight:700;font-size:14px;color:rgba(255,255,255,0.5);min-width:100px}
+.schedule-item div:last-child{flex:1}
+.schedule-item h3{font-weight:700;font-size:16px;margin-bottom:2px}
+.schedule-item p{font-size:14px;color:rgba(255,255,255,0.5)}
+
+/* Venue */
+.feature-chip{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:8px;padding:10px 16px;margin-right:12px;margin-bottom:12px;font-size:14px}
+.feature-chip svg{width:20px;height:20px;color:#667eea}
+
+/* Register */
+.register-section{background:rgba(102,126,234,0.05)}
+.role-grid{display:grid;grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));gap:16px;margin-bottom:48px}
+.role-card{background:rgba(255,255,255,0.02);border:2px solid rgba(255,255,255,0.1);border-radius:12px;padding:24px;text-align:center;cursor:pointer;transition:all 0.2s}
+.role-card:hover{border-color:rgba(102,126,234,0.5);background:rgba(102,126,234,0.08)}
+.role-card.active{border-color:#667eea;background:rgba(102,126,234,0.15)}
+.role-icon{width:48px;height:48px;border-radius:12px;background:linear-gradient(135deg, #667eea, #764ba2);display:flex;align-items:center;justify-content:center;margin:0 auto 12px}
+.role-label{font-weight:700;font-size:16px;margin-bottom:8px}
+.role-desc{font-size:13px;color:rgba(255,255,255,0.6)}
+
+/* Form */
+.form-box{background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:48px;max-width:600px;margin:0 auto}
+.form-grid{display:grid;grid-template-columns:repeat(2, 1fr);gap:16px;margin-bottom:16px}
+.form-grid-2{display:grid;grid-template-columns:repeat(2, 1fr);gap:16px;margin-bottom:16px}
+.form-grid-2-1{display:grid;grid-template-columns:2fr 1fr;gap:16px;margin-bottom:16px}
+.form-grid-3{display:grid;grid-template-columns:repeat(3, 1fr);gap:16px;margin-bottom:16px}
+.form-grid > div{display:flex;flex-direction:column}
+.form-grid-2 > div{display:flex;flex-direction:column}
+.form-grid-2-1 > div{display:flex;flex-direction:column}
+.form-grid-3 > div{display:flex;flex-direction:column}
+.form-label{font-size:15px;font-weight:700;margin-bottom:8px;color:rgba(255,255,255,0.8)}
+.form-input{padding:12px 16px;border-radius:8px;border:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.02);color:#fff;font-size:14px;transition:all 0.2s}
+.form-input:focus{outline:none;border-color:rgba(102,126,234,0.5);background:rgba(102,126,234,0.08)}
+.form-input.error{border-color:#ef4444;background:rgba(239,68,68,0.08)}
+.form-input::placeholder{color:rgba(255,255,255,0.4)}
+.btn-submit{padding:12px 32px;border-radius:10px;background:linear-gradient(135deg, #667eea, #764ba2);border:none;color:#fff;font-weight:600;font-size:15px;cursor:pointer;width:100%;margin-top:16px;display:flex;align-items:center;justify-content:center;gap:8px;transition:transform 0.2s}
+.btn-submit:hover:not(:disabled){transform:translateY(-2px)}
+.btn-submit:disabled{opacity:0.6;cursor:not-allowed}
+
+/* Success */
+.success-box{text-align:center;background:rgba(34,197,94,0.08);border:1px solid rgba(34,197,94,0.25);border-radius:12px;padding:48px}
+.success-box svg{margin:0 auto 24px}
+.reg-id{background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.1);border-radius:8px;padding:16px;font-family:monospace;font-size:14px;margin:24px 0;word-break:break-all}
+
+/* Error */
+.error-box{background:rgba(239,68,68,0.08);border:1px solid rgba(239,68,68,0.25);border-radius:12px;padding:16px;margin-bottom:24px;text-align:center;color:#ef4444;font-weight:600}
+
+/* Spinner */
+.spinner{display:inline-block;width:16px;height:16px;border:2px solid rgba(255,255,255,0.2);border-top-color:#fff;border-radius:50%;animation:spin 0.6s linear infinite}
+
+/* Footer */
+.footer{background:rgba(10,14,26,0.95);border-top:1px solid rgba(255,255,255,0.08);padding:64px 32px;margin-top:120px}
+.footer-inner{max-width:1200px;margin:0 auto}
+.footer-grid{display:grid;grid-template-columns:repeat(3, 1fr);gap:48px;margin-bottom:48px}
+.footer-grid > div:first-child{grid-column:1/2}
+.footer-grid > div:nth-child(2){grid-column:2/3}
+.footer-grid > div:nth-child(3){grid-column:3/4}
+.footer-grid h4{font-weight:700;font-size:14px;margin-bottom:16px;color:rgba(255,255,255,0.8)}
+.footer-grid a{color:rgba(255,255,255,0.5);font-size:14px;display:block;margin-bottom:10px;transition:color 0.2s}
+.footer-grid a:hover{color:#fff}
+.social-link{display:inline-block;margin-right:12px}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.08);padding-top:24px;text-align:center;color:rgba(255,255,255,0.5);font-size:14px}
+
+/* Responsive */
+@media(max-width:768px){
+  .hero-title{font-size:48px}
+  .section-title{font-size:32px}
+  .form-grid,.form-grid-2,.form-grid-3{grid-template-columns:1fr}
+  .form-grid-2-1{grid-template-columns:1fr}
+  .hero-meta{gap:16px}
+  .footer-grid{grid-template-columns:1fr}
+  .footer-grid > div{grid-column:auto}
+}
+</style>
+</head>
+<body>
+<nav class="nav"><div class="nav-inner">
+  <div class="nav-logo" onclick="scrollTo('hero')"><div class="nav-logo-icon">🧠</div><span style="font-weight:800;font-size:18px;letter-spacing:-0.5px">IOAI 2026</span></div>
+  <div class="nav-links">
+    <button class="nav-link" onclick="scrollTo('about')">About</button>
+    <button class="nav-link" onclick="scrollTo('contests')">Contests</button>
+    <button class="nav-link" onclick="scrollTo('schedule')">Schedule</button>
+    <button class="btn-primary" onclick="scrollTo('register')">Register</button>
+    <button class="btn-lang" onclick="toggleLang()">🌐adow:0 4px 30px rgba(102,126,234,0.4);transition:transform 0.2s}
+.btn-hero:hover{transform:scale(1.04)}
+.btn-hero-outline{padding:14px 32px;border-radius:12px;cursor:pointer;border:1px solid rgba(255,255,255,0.15);background:rgba(255,255,255,0.05);color:#fff;font-size:16px;font-weight:600}
+.scroll-hint{position:absolute;bottom:30px;left:50%;transform:translateX(-50%);cursor:pointer;animation:bounce 2s infinite}
+
+/* About stats */
+.stats-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.stat-card{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:16px;padding:24px;text-align:center}
+.stat-val{font-size:36px;font-weight:800;margin-bottom:4px}
+.stat-label{font-size:14px;color:rgba(255,255,255,0.5);font-weight:600}
+
+/* Cards */
+.card{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:20px;padding:32px;transition:all 0.3s}
+.card:hover{background:rgba(255,255,255,0.07);transform:translateY(-4px)}
+.card-icon{width:56px;height:56px;border-radius:14px;display:flex;align-items:center;justify-content:center;margin-bottom:20px}
+.card h3{font-size:22px;font-weight:700;margin-bottom:12px}
+.card p{font-size:15px;line-height:1.7;color:rgba(255,255,255,0.6)}
+
+/* Schedule */
+.schedule-item{display:flex;align-items:center;gap:24px;padding:20px 24px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-radius:14px;transition:all 0.2s}
+.schedule-item:hover{background:rgba(255,255,255,0.06)}
+.schedule-date{min-width:70px;padding:8px 0;text-align:center;border-radius:10px;background:linear-gradient(135deg,rgba(102,126,234,0.15),rgba(118,75,162,0.15));font-weight:800;font-size:14px;color:#a5b4fc}
+
+/* Feature chips */
+.feature-chip{display:flex;align-items:center;gap:12px;padding:16px;background:rgba(255,255,255,0.04);border-radius:12px;border:1px solid rgba(255,255,255,0.06);font-size:15px;font-weight:500}
+
+/* Registration */
+.register-section{background:radial-gradient(ellipse at 50% 50%,rgba(102,126,234,0.08) 0%,transparent 60%)}
+.role-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin-bottom:32px}
+.role-card{padding:20px;border-radius:16px;cursor:pointer;text-align:center;background:rgba(255,255,255,0.03);border:1.5px solid rgba(255,255,255,0.08);transition:all 0.2s}
+.role-card.active{background:rgba(102,126,234,0.15);border:2px solid #667eea;transform:scale(1.02)}
+.role-icon{width:48px;height:48px;border-radius:14px;margin:0 auto 12px;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,0.06);color:rgba(255,255,255,0.4)}
+.role-card.active .role-icon{background:linear-gradient(135deg,#667eea,#764ba2);color:#fff}
+.role-card .role-label{font-weight:700;font-size:15px;margin-bottom:4px;color:rgba(255,255,255,0.7)}
+.role-card.active .role-label{color:#fff}
+.role-card .role-desc{font-size:12px;color:rgba(255,255,255,0.4)}
+
+.form-box{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:20px;padding:32px;animation:fadeIn 0.3s ease}
+.form-grid{display:grid;gap:16px;margin-bottom:16px}
+.form-grid-2{grid-template-columns:1fr 1fr}
+.form-grid-3{grid-template-columns:1fr 1fr 1fr}
+.form-grid-2-1{grid-template-columns:2fr 1fr}
+.form-label{display:block;margin-bottom:6px;font-size:13px;font-weight:600;color:rgba(255,255,255,0.6)}
+.form-input{width:100%;padding:12px 16px;border-radius:10px;border:1.5px solid rgba(255,255,255,0.12);background:rgba(255,255,255,0.05);color:#fff;font-size:15px;outline:none;transition:all 0.2s}
+.form-input:focus{border-color:#667eea}
+.form-input.error{border-color:#ef4444}
+.form-input::placeholder{color:rgba(255,255,255,0.25)}
+select.form-input{cursor:pointer;appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='rgba(255,255,255,0.4)' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 12px center}
+select.form-input option{background:#1a1f2e}
+.btn-submit{width:100%;padding:16px 32px;border-radius:12px;border:none;cursor:pointer;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;font-size:17px;font-weight:700;display:flex;align-items:center;justify-content:center;gap:10px;box-shadow:0 4px 30px rgba(102,126,234,0.3);transition:all 0.2s}
+.btn-submit:hover{transform:scale(1.01)}
+.btn-submit:disabled{opacity:0.6;cursor:wait}
+.spinner{width:20px;height:20px;border:3px solid rgba(255,255,255,0.3);border-top-color:#fff;border-radius:50%;display:inline-block;animation:spin 0.8s linear infinite}
+
+/* Success */
+.success-box{background:rgba(34,197,94,0.08);border:1px solid rgba(34,197,94,0.25);border-radius:20px;padding:40px;text-align:center;margin-bottom:32px}
+.reg-id{display:inline-block;padding:12px 24px;border-radius:12px;background:rgba(255,255,255,0.08);font-family:monospace;font-size:18px;font-weight:700;color:#a5b4fc;letter-spacing:1px}
+
+/* Footer */
+.footer{border-top:1px solid rgba(255,255,255,0.06);background:rgba(0,0,0,0.3)}
+.footer-inner{max-width:1200px;margin:0 auto;padding:48px 24px 24px}
+.footer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:40px;margin-bottom:40px}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.06);padding-top:20px;text-align:center;color:rgba(255,255,255,0.3);font-size:13px}
+.social-link{padding:8px 16px;border-radius:8px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.08);color:rgba(255,255,255,0.6);font-size:13px;font-weight:500;display:inline-block}
+
+/* Responsive */
+@media(max-width:768px){
+  .nav-links .nav-link:not(.btn-primary):not(.btn-lang){display:none}
+  .form-grid-2,.form-grid-3,.form-grid-2-1{grid-template-columns:1fr}
+  .hero-meta{flex-direction:column;gap:8px}
+  .countdown{gap:8px}
+  .countdown-item{padding:12px 16px;min-width:60px}
+  .countdown-val{font-size:28px}
+  .stats-grid{grid-template-columns:1fr 1fr}
+}
+</style>
+</head>
+<body>
+
+<!-- SVG Icons (hidden) -->
+<svg style="display:none" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="icon-brain" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 2A5.5 5.5 0 0 0 4 7.5c0 1.5.5 2.8 1.4 3.8A3.5 3.5 0 0 0 4 14.5C4 16.4 5.6 18 7.5 18H8v2.5a1.5 1.5 0 0 0 3 0V18h2v2.5a1.5 1.5 0 0 0 3 0V18h.5c1.9 0 3.5-1.6 3.5-3.5a3.5 3.5 0 0 0-1.4-2.8c.9-1 1.4-2.3 1.4-3.7A5.5 5.5 0 0 0 14.5 2h-5z"/></symbol>
+  <symbol id="icon-sparkles" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3Z"/></symbol>
+  <symbol id="icon-map-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+  <symbol id="icon-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></symbol>
+  <symbol id="icon-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></symbol>
+  <symbol id="icon-chevron-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></symbol>
+  <symbol id="icon-star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></symbol>
+  <symbol id="icon-trophy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6M18 9h1.5a2.5 2.5 0 0 0 0-5H18M4 22h16M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20 7 22h10c0-2-0.85-3.25-2.03-3.79A1.07 1.07 0 0 1 14 17v-2.34"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></symbol>
+  <symbol id="icon-cpu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M15 2v2M15 20v2M2 15h2M2 9h2M20 15h2M20 9h2M9 2v2M9 20v2"/></symbol>
+  <symbol id="icon-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+  <symbol id="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4 12 14.01l-3-3"/></symbol>
+  <symbol id="icon-ticket" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M13 5v2M13 17v2M13 11v2"/></symbol>
+  <symbol id="icon-grad" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z\"/><path d=\"M6 12v5c0 1.66 2.69 3 6 3s6-1.34 6-3v-5\"/></symbol>
+  <symbol id=\"icon-user\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2\"/><circle cx=\"12\" cy=\"7\" r=\"4\"/></symbol>
+  <symbol id=\"icon-heart\" viewBox=\"0 0 24 24\" fl=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z\"/></symbol>
+  <symbol id=\"icon-globe\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><path d=\"M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20M2 12h20\"/></symbol>
+</svg>
+
+<div id=\"app\"></div>
+
+<script>
+const APPS_SCRIPT_URL = \"https://script.google.com/macros/s/AKfycbyUSYQFSTnmUwUpfRoK2LoouwHypRF5ihey_YaCml9yQmwR3bWNBRnzJHL6UyyNlRLh/exec\";
+
+const COUNTRIES = [\"Afghanistan\",\"Albania\",\"Algeria\",\"Argentina\",\"Armenia\",\"Australia\",\"Austria\",\"Azerbaijan\",\"Bahrain\",\"Bangladesh\",\"Belarus\",\"Belgium\",\"Bolivia\",\"Bosnia and Herzegovina\",\"Brazil\",\"Brunei\",\"Bulgaria\",\"Cambodia\",\"Canada\",\"Chile\",\"China\",\"Colombia\",\"Costa Rica\",\"Croatia\",\"Cuba\",\"Cyprus\",\"Czech Republic\",\"Denmark\",\"Ecuador\",\"Egypt\",\"Estonia\",\"Ethiopia\",\"Finland\",\"France\",\"Georgia\",\"Germany\",\"Ghana\",\"Greece\",\"Guatemala\",\"Hong Kong\",\"Hungary\",\"Iceland\",\"India\",\"Indonesia\",\"Iran\",\"Iraq\",\"Ireland\",\"Israel\",\"Italy\",\"Jamaica\",\"Japan\",\"Jordan\",\"Kazakhstan\",\"Kenya\",\"Kuwait\",\"Kyrgyzstan\",\"Latvia\",\"Lebanon\",\"Libya\",\"Lithuania\",\"Luxembourg\",\"Malaysia\",\"Maldives\",\"Mexico\",\"Moldova\",\"Mongolia\",\"Montenegro\",\"Morocco\",\"Myanmar\",\"Nepal\",\"Netherlands\",\"New Zealand\",\"Nigeria\",\"North Korea\",\"North Macedonia\",\"Norway\",\"Oman\",\"Pakistan\",\"Palestine\",\"Panama\",\"Paraguay\",\"Peru\",\"Philippines\",\"Poland\",\"Portugal\",\"Qatar\",\"Romania\",\"Russia\",\"Saudi Arabia\",\"Senegal\",\"Serbia\",\"Singapore\",\"Slovakia\",\"Slovenia\",\"South Africa\",\"South Korea\",\"Spain\",\"Sri Lanka\",\"Sweden\",\"Switzerland\",\"Syria\",\"Taiwan\",\"Tajikistan\",\"Tanzania\",\"Thailand\",\"Trinidad and Tobago\",\"Tunisia\",\"Turkey\",\"Turkmenistan\",\"UAE\",\"Uganda\",\"Ukraine\",\"United Kingdom\",\"United States\",\"Uruguay\",\"Uzbekistan\",\"Venezuela\",\"Vietnam\"];
+
+const T = {
+  en: {
+    nav:{about:\"About\",contests:\"Contests\",schedule:\"Schedule\",register:\"Register\",lang:\"RU\"},
+    hero:{badge:\"3rd International Olympiad in Artificial Intelligence\",title:\"IOAI 2026\",subtitle:\"Astana, Kazakhstan\",dates:\"August 2\u2013 8, 2026\",cta:\"Get Your Pass\",learnMore:\"Learn More\"},
+    about:{tag:\"About the Olympiad\",title:\"The World's Newest Science Olympiad\",desc1:\"The International Olympiad in Artificial Intelligence (IOAI) brings together the brightest young minds from around the world to compete in AI and machine learning challenges.\",desc2:\"Each country participates with up to two teams of four students, guided by a team leader. The olympiad tests skills in machine learning, data science, and AI problem-solving.\",s1v:\"50+\",s1l:\"Countries\",s2v:\"400+\",s2l:\"Students\",s3v:\"7\",s3l:\"Days\",s4v:\"3rd\",s4l:\"Edition\"},
+    contests:{tag:\"Competition Format\",title:\"Three Unique Contests\",c1:{t:\"Individual Contest\",d:\"Participants solve AI and ML problems individually, demonstrating personal expertise in algorithm design, model training, and data analysis.\"},c2:{t:\"Team Challenge\",d:\"Teams collaborate on complex, multi-faceted AI problems that require coordination, diverse skills, and creative approaches.\"},c3:{t:\"GAITE Contest\",d:\"A unique format focusing on Generative AI and interactive tasks — pushing the boundaries of what's possible with modern AI systems.\"}},
+    schedule:{tag:\"Event Schedule\",title:\"Week at a Glance\",days:[{d:\"Aug 2\",t:\"Arrival & Registration\",s:\"Welcome ceremony and team registration\"},{d:\"Aug 3\",t:\"Opening Ceremony\",s:\"Official opening at EXPO Astana\"},{d:\"Aug 4\",t:\"Individual Contest\",s:\"Day-long individual AI challenge\"},{d:\"Aug 5\",t:\"Excursion Day\",s:\"Explore the beauty of Astana\"},{d:\"Aug 6\",t:\"Team Challenge\",s:\"Collaborative problem-solving\"},{d:\"Aug 7\",t:\"GAITE Contest\",s:\"Generative AI competition\"},{d:\"Aug 8\",t:\"Closing Ceremony\",s:\"Awards and farewell dinner\"}]},
+    venue:{tag:\"Host City\",title:\"Welcome to Astana\",desc:\"Kazakhstan's futuristic capital city is the perfect backdrop for an AI olympiad. As part of Kazakhstan's declared Year of Artificial Intelligence, Astana combines cutting-edge architecture with wa418\u0418 \u0438 \u0438\u043d\u0442\u0435\u0440\u0430\u043a\u0442\u0438\u0432\u043d\u044b\u0435 \u0437\u0430\u0434\u0430\u0447\u0438 \u2014 \u0440\u0430\u0441\u0448\u0438\u0440\u044f\u044f \u0433\u0440\u0430\u043d\u0438\u0446\u044b \u0432\u043e\u0437\u043c\u043e\u0436\u043d\u043e\u0441\u0442\u0435\u0439 \u0441\u043e\u0432\u0440\u0435\u043c\u0435\u043d\u043d\u044b\u0445 \u0441\u0438\u0441\u0442\u0435\u043c \u0418\u0418."}},\n    schedule:{tag:\"\u0420\u0430\u0441\u043f\u0438\u0441\u0430\u043d\u0438\u0435\",title:\"\u041d\u0435\u0434\u0435\u043b\u044f \u0432 \u0434\u0435\u0442\u0430\u043b\u044f\u0445\",days:[{d:\"2 \u0430\u0432\u0433\",t:\"\u041f\u0440\u0438\u0431\u044b\u0442\u0438\u0435 \u0438 \u0440\u0435\u0433\u0438\u0441\u0442\u0440\u0430\u0446\u0438\u044f\",s:\"\u0426\u0435\u0440\u0435\u043c\u043e\u043d\u0438\u044f \u043f\u0440\u0438\u0432\u0435\u0442\u0441\u0442\u0432\u0438\u044f\"},{d:\"3 \u0430\u0432\u0433\",t:\"\u0426\u0435\u0440\u0435\u043c\u043e\u043d\u0438\u044f \u043e\u0442\u043a\u0440\u044b\u0442\u0438\u044f\",s:\"\u041e\u0444\u0438\u0446\u0438\u0430\u043b\u044c\u043d\u043e\u0435 \u043e\u0442\u043a\u0440\u044b\u0442\u0438\u0435 \u043d\u0430 EXPO\"},{d:\"4 \u0430\u0432\u0433\",t:\"\u0418\u043d\u0434\u0438\u0432\u0438\u0434\u0443\u0430\u043b\u044c\u043d\u044b\u0439 \u043a\u043e\u043d\u043a\u0443\u0440\u0441\",s:\"\u0417\u0430\u0434\u0430\u0447\u0438 \u043f\u043e \u0418\u0418\"},{d:\"5 \u0430\u0432\u0433\",t:\"\u0414\u0435\u043d\u044c \u044d\u043a\u0441\u043a\u0443\u0440\u0441\u0438\u0439\",s:\"\u041a\u0440\u0430\u0441\u043e\u0442\u044b \u0410\u0441\u0442\u0430\u043d\u044b\"},{d:\"6 \u0430\u0432\u0433\",t:\"\u041a\u043e\u043c\u0430\u043d\u0434\u043d\u043e\u0435 \u0441\u043e\u0440\u0435\u0432\u043d\u043e\u0432\u0430\u043d\u0438\u0435\",s:\"\u0421\u043e\u0432\u043c\u0435\u0441\u0442\u043d\u043e\u0435 \u0440\u0435\u0448\u0435\u043d\u0438\u0435 \u0437\u0430\u0434\u0430\u0447\"},{d:\"7 \u0430\u0432\u0433\",t:\"\u041a\u043e\u043d\u043a\u0443\u0440\u0441 GAITE\",s:\"\u0413\u0435\u043d\u0435\u0440\u0430\u0442\u0438\u0432\u043d\u044b\u0439 \u0418\u0418\"},{d:\"8 \u0430\u0432\u0433\",t:\"\u0426\u0435\u0440\u0435\u043c\u043e\u043d\u0438\u044f \u0437\u0430\u043a\u0440\u044b\u0442\u0438\u044f\",s:\"\u041d\u0430\u0433\u0440\u0430\u0436\u0434\u0435\u043d\u0438\u0435 \u0438 \u0443\u0436\u0438\u043d\"}]},
