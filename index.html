@@ -11,7 +11,7 @@
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;background:#0a0e1a;color:#e2e8f0;min-height:100vh;overflow-x:hidden}
 a{color:inherit;text-decoration:none}
-::selection{background:rgba(102,126,234,0.4)}
+::selection{background:rgba(10,186,181,0.4)}
 input,select,textarea,button{font-family:inherit}
 ::-webkit-scrollbar{width:8px}
 ::-webkit-scrollbar-track{background:#0a0e1a}
@@ -31,11 +31,11 @@ input,select,textarea,button{font-family:inherit}
 .nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,14,26,0.85);backdrop-filter:blur(20px);border-bottom:1px solid rgba(255,255,255,0.06)}
 .nav-inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:80px}
 .nav-logo{display:flex;align-items:center;gap:10px;cursor:pointer}
-.nav-logo-icon{width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,#667eea,#764ba2);display:flex;align-items:center;justify-content:center}
+.nav-logo-icon{width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,#0ABAB5,#007A76);display:flex;align-items:center;justify-content:center}
 .nav-links{display:flex;align-items:center;gap:24px}
 .nav-link{cursor:pointer;font-size:14px;font-weight:500;color:rgba(255,255,255,0.7);transition:color 0.2s;background:none;border:none}
 .nav-link:hover{color:#fff}
-.btn-primary{padding:8px 20px;border-radius:8px;border:none;cursor:pointer;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;font-size:14px;font-weight:600;transition:transform 0.2s}
+.btn-primary{padding:8px 20px;border-radius:8px;border:none;cursor:pointer;background:linear-gradient(135deg,#0ABAB5,#007A76);color:#fff;font-size:14px;font-weight:600;transition:transform 0.2s}
 .btn-primary:hover{transform:scale(1.03)}
 .btn-lang{padding:6px 14px;border-radius:8px;border:1px solid rgba(255,255,255,0.15);background:transparent;color:#fff;font-size:13px;font-weight:600;cursor:pointer;display:flex;align-items:center;gap:6px}
 
@@ -45,17 +45,17 @@ input,select,textarea,button{font-family:inherit}
 .section-title{font-size:clamp(28px,4vw,44px);font-weight:800;margin-bottom:24px;letter-spacing:-1px}
 
 /* Hero */
-.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;background:radial-gradient(ellipse at 50% 30%,rgba(102,126,234,0.15) 0%,transparent 60%),radial-gradient(ellipse at 80% 80%,rgba(118,75,162,0.1) 0%,transparent 50%)}
+.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;background:radial-gradient(ellipse at 50% 30%,rgba(10,186,181,0.15) 0%,transparent 60%),radial-gradient(ellipse at 80% 80%,rgba(118,75,162,0.1) 0%,transparent 50%)}
 .hero-content{text-align:center;z-index:10;padding:0 24px;max-width:800px}
-.hero-title{font-size:clamp(48px,10vw,96px);font-weight:900;line-height:0.95;background:linear-gradient(135deg,#fff 0%,#a5b4fc 50%,#c084fc 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:12px;letter-spacing:-2px}
+.hero-title{font-size:clamp(48px,10vw,96px);font-weight:900;line-height:0.95;background:linear-gradient(135deg,#fff 0%,#81D8D0 50%,#0ABAB5 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:12px;letter-spacing:-2px}
 .hero-meta{display:flex;align-items:center;justify-content:center;gap:16px;margin-bottom:8px;flex-wrap:wrap;font-size:20px;color:rgba(255,255,255,0.8)}
 .hero-meta svg{flex-shrink:0}
 .countdown{display:flex;justify-content:center;gap:16px;margin:40px 0;flex-wrap:wrap}
 .countdown-item{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:16px 24px;min-width:80px;text-align:center;backdrop-filter:blur(10px)}
-.countdown-val{font-size:36px;font-weight:800;font-variant-numeric:tabular-nums;background:linear-gradient(135deg,#a5b4fc,#c084fc);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.countdown-val{font-size:36px;font-weight:800;font-variant-numeric:tabular-nums;background:linear-gradient(135deg,#81D8D0,#0ABAB5);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
 .countdown-label{font-size:12px;color:rgba(255,255,255,0.5);font-weight:600;text-transform:uppercase;letter-spacing:1px}
 .hero-buttons{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
-.btn-hero{padding:14px 32px;border-radius:12px;border:none;cursor:pointer;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;font-size:16px;font-weight:700;display:flex;align-items:center;gap:8px;box-shadow:0 4px 30px rgba(102,126,234,0.4);transition:transform 0.2s}
+.btn-hero{padding:14px 32px;border-radius:12px;border:none;cursor:pointer;background:linear-gradient(135deg,#0ABAB5,#007A76);color:#fff;font-size:16px;font-weight:700;display:flex;align-items:center;gap:8px;box-shadow:0 4px 30px rgba(10,186,181,0.4);transition:transform 0.2s}
 .btn-hero:hover{transform:scale(1.04)}
 .btn-hero-outline{padding:14px 32px;border-radius:12px;cursor:pointer;border:1px solid rgba(255,255,255,0.15);background:rgba(255,255,255,0.05);color:#fff;font-size:16px;font-weight:600}
 .scroll-hint{position:absolute;bottom:30px;left:50%;transform:translateX(-50%);cursor:pointer;animation:bounce 2s infinite}
@@ -76,7 +76,7 @@ input,select,textarea,button{font-family:inherit}
 /* Schedule */
 .schedule-item{display:flex;align-items:center;gap:24px;padding:20px 24px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-radius:14px;transition:all 0.2s}
 .schedule-item:hover{background:rgba(255,255,255,0.06)}
-.schedule-date{min-width:70px;padding:8px 0;text-align:center;border-radius:10px;background:linear-gradient(135deg,rgba(102,126,234,0.15),rgba(118,75,162,0.15));font-weight:800;font-size:14px;color:#a5b4fc}
+.schedule-date{min-width:70px;padding:8px 0;text-align:center;border-radius:10px;background:linear-gradient(135deg,rgba(10,186,181,0.15),rgba(0,122,118,0.15));font-weight:800;font-size:14px;color:#81D8D0}
 
 /* Feature chips */
 .feature-chip{display:flex;align-items:center;gap:12px;padding:16px;background:rgba(255,255,255,0.04);border-radius:12px;border:1px solid rgba(255,255,255,0.06);font-size:15px;font-weight:500}
@@ -85,9 +85,9 @@ input,select,textarea,button{font-family:inherit}
 .register-section{background:radial-gradient(ellipse at 50% 50%,rgba(102,126,234,0.08) 0%,transparent 60%)}
 .role-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin-bottom:32px}
 .role-card{padding:20px;border-radius:16px;cursor:pointer;text-align:center;background:rgba(255,255,255,0.03);border:1.5px solid rgba(255,255,255,0.08);transition:all 0.2s}
-.role-card.active{background:rgba(102,126,234,0.15);border:2px solid #667eea;transform:scale(1.02)}
+.role-card.active{background:rgba(10,186,181,0.15);border:2px solid #0ABAB5;transform:scale(1.02)}
 .role-icon{width:48px;height:48px;border-radius:14px;margin:0 auto 12px;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,0.06);color:rgba(255,255,255,0.4)}
-.role-card.active .role-icon{background:linear-gradient(135deg,#667eea,#764ba2);color:#fff}
+.role-card.active .role-icon{background:linear-gradient(135deg,#0ABAB5,#007A76);color:#fff}
 .role-card .role-label{font-weight:700;font-size:15px;margin-bottom:4px;color:rgba(255,255,255,0.7)}
 .role-card.active .role-label{color:#fff}
 .role-card .role-desc{font-size:12px;color:rgba(255,255,255,0.4)}
@@ -99,19 +99,19 @@ input,select,textarea,button{font-family:inherit}
 .form-grid-2-1{grid-template-columns:2fr 1fr}
 .form-label{display:block;margin-bottom:6px;font-size:13px;font-weight:600;color:rgba(255,255,255,0.6)}
 .form-input{width:100%;padding:12px 16px;border-radius:10px;border:1.5px solid rgba(255,255,255,0.12);background:rgba(255,255,255,0.05);color:#fff;font-size:15px;outline:none;transition:all 0.2s}
-.form-input:focus{border-color:#667eea}
+.form-input:focus{border-color:#0ABAB5}
 .form-input.error{border-color:#ef4444}
 .form-input::placeholder{color:rgba(255,255,255,0.25)}
 select.form-input{cursor:pointer;appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='rgba(255,255,255,0.4)' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 12px center}
 select.form-input option{background:#1a1f2e}
-.btn-submit{width:100%;padding:16px 32px;border-radius:12px;border:none;cursor:pointer;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;font-size:17px;font-weight:700;display:flex;align-items:center;justify-content:center;gap:10px;box-shadow:0 4px 30px rgba(102,126,234,0.3);transition:all 0.2s}
+.btn-submit{width:100%;padding:16px 32px;border-radius:12px;border:none;cursor:pointer;background:linear-gradient(135deg,#0ABAB5,#007A76);color:#fff;font-size:17px;font-weight:700;display:flex;align-items:center;justify-content:center;gap:10px;box-shadow:0 4px 30px rgba(10,186,181,0.3);transition:all 0.2s}
 .btn-submit:hover{transform:scale(1.01)}
 .btn-submit:disabled{opacity:0.6;cursor:wait}
 .spinner{width:20px;height:20px;border:3px solid rgba(255,255,255,0.3);border-top-color:#fff;border-radius:50%;display:inline-block;animation:spin 0.8s linear infinite}
 
 /* Success */
 .success-box{background:rgba(34,197,94,0.08);border:1px solid rgba(34,197,94,0.25);border-radius:20px;padding:40px;text-align:center;margin-bottom:32px}
-.reg-id{display:inline-block;padding:12px 24px;border-radius:12px;background:rgba(255,255,255,0.08);font-family:monospace;font-size:18px;font-weight:700;color:#a5b4fc;letter-spacing:1px}
+.reg-id{display:inline-block;padding:12px 24px;border-radius:12px;background:rgba(255,255,255,0.08);font-family:monospace;font-size:18px;font-weight:700;color:#81D8D0;letter-spacing:1px}
 
 /* Footer */
 .footer{border-top:1px solid rgba(255,255,255,0.06);background:rgba(0,0,0,0.3)}
@@ -135,7 +135,7 @@ select.form-input option{background:#1a1f2e}
 .tier-diamond{background:linear-gradient(135deg,rgba(100,230,255,0.28),rgba(180,100,255,0.18),rgba(100,230,255,0.22));color:#a5f3fc;text-shadow:0 0 10px rgba(100,230,255,0.8),0 0 22px rgba(160,100,255,0.5);border:1px solid rgba(130,220,255,0.45)}
 .tier-platinum{background:linear-gradient(135deg,rgba(180,215,245,0.22),rgba(240,250,255,0.16));color:#c8e2f8;text-shadow:0 0 10px rgba(160,210,255,0.55);border:1px solid rgba(180,220,255,0.28)}
 .tier-gold{background:rgba(251,191,36,0.15);color:#fbbf24}
-.tier-host{background:rgba(167,139,250,0.15);color:#a78bfa}
+.tier-host{background:rgba(10,186,181,0.15);color:#0ABAB5}
 .tier-general{background:rgba(99,179,237,0.15);color:#63b3ed}
 .tier-brilliant{background:rgba(249,168,212,0.15);color:#f9a8d4}
 .tier-golden{background:rgba(251,191,36,0.12);color:#fbbf24}
@@ -177,15 +177,15 @@ select.form-input option{background:#1a1f2e}
 <div id="contact-popup" onclick="if(event.target===this)hideContactPopup()" style="display:none;position:fixed;inset:0;z-index:200;background:rgba(0,0,0,0.65);backdrop-filter:blur(6px);align-items:center;justify-content:center">
   <div style="background:#13182a;border:1px solid rgba(255,255,255,0.1);border-radius:20px;padding:36px 32px;max-width:400px;width:90%;text-align:center;position:relative">
     <button onclick="hideContactPopup()" style="position:absolute;top:14px;right:18px;background:none;border:none;color:rgba(255,255,255,0.4);cursor:pointer;font-size:22px;line-height:1">&times;</button>
-    <div style="width:56px;height:56px;border-radius:14px;background:linear-gradient(135deg,#667eea,#764ba2);display:flex;align-items:center;justify-content:center;margin:0 auto 16px">
+    <div style="width:56px;height:56px;border-radius:14px;background:linear-gradient(135deg,#0ABAB5,#007A76);display:flex;align-items:center;justify-content:center;margin:0 auto 16px">
       <svg width="24" height="24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
     </div>
     <h3 style="font-size:20px;font-weight:700;margin-bottom:6px">Contact Us</h3>
     <p style="color:rgba(255,255,255,0.45);font-size:14px;margin-bottom:20px">Reach the organizing team at</p>
-    <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:10px;padding:14px 20px;font-family:monospace;font-size:16px;font-weight:600;color:#a5b4fc;margin-bottom:20px;letter-spacing:0.3px">admin@cpfed.kz</div>
+    <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:10px;padding:14px 20px;font-family:monospace;font-size:16px;font-weight:600;color:#81D8D0;margin-bottom:20px;letter-spacing:0.3px">admin@cpfed.kz</div>
     <div style="display:flex;gap:12px;justify-content:center">
       <button id="copy-btn" onclick="navigator.clipboard.writeText('admin@cpfed.kz');this.textContent='Copied!';setTimeout(()=>this.textContent='Copy',1800)" style="padding:10px 22px;border-radius:10px;border:1px solid rgba(255,255,255,0.15);background:rgba(255,255,255,0.05);color:#fff;cursor:pointer;font-size:14px;font-weight:600">Copy</button>
-      <a href="mailto:admin@cpfed.kz" style="padding:10px 22px;border-radius:10px;border:none;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;font-size:14px;font-weight:600;display:inline-flex;align-items:center">Send Email</a>
+      <a href="mailto:admin@cpfed.kz" style="padding:10px 22px;border-radius:10px;border:none;background:linear-gradient(135deg,#0ABAB5,#007A76);color:#fff;font-size:14px;font-weight:600;display:inline-flex;align-items:center">Send Email</a>
     </div>
   </div>
 </div>
@@ -387,7 +387,7 @@ function render(){
   <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:40px">
     <div><p style="font-size:17px;line-height:1.8;color:rgba(255,255,255,0.7);margin-bottom:20px">${a.desc1}</p><p style="font-size:17px;line-height:1.8;color:rgba(255,255,255,0.7)">${a.desc2}</p></div>
     <div class="stats-grid">
-      ${[[a.s1v,a.s1l,"#667eea"],[a.s2v,a.s2l,"#764ba2"],[a.s3v,a.s3l,"#06b6d4"],[a.s4v,a.s4l,"#a855f7"]].map(([v,l,c])=>`<div class="stat-card"><div class="stat-val" style="color:${c}">${v}</div><div class="stat-label">${l}</div></div>`).join("")}
+      ${[[a.s1v,a.s1l,"#0ABAB5"],[a.s2v,a.s2l,"#007A76"],[a.s3v,a.s3l,"#00c8c4"],[a.s4v,a.s4l,"#81D8D0"]].map(([v,l,c])=>`<div class="stat-card"><div class="stat-val" style="color:${c}">${v}</div><div class="stat-label">${l}</div></div>`).join("")}
     </div>
   </div>
 </div></section>
@@ -414,7 +414,7 @@ function render(){
   <div class="tag">${icon("trophy",14)}${c.tag}</div>
   <h2 class="section-title" style="margin-bottom:48px">${c.title}</h2>
   <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px">
-    ${[{ic:"cpu",g:"linear-gradient(135deg,#667eea,#764ba2)",...c.c1},{ic:"users",g:"linear-gradient(135deg,#06b6d4,#3b82f6)",...c.c2},{ic:"sparkles",g:"linear-gradient(135deg,#a855f7,#ec4899)",...c.c3}].map(x=>`<div class="card"><div class="card-icon" style="background:${x.g}">${icon(x.ic,28)}</div><h3>${x.t}</h3><p>${x.d}</p></div>`).join("")}
+    ${[{ic:"cpu",g:"linear-gradient(135deg,#0ABAB5,#007A76)",...c.c1},{ic:"users",g:"linear-gradient(135deg,#0ABAB5,#00918d)",...c.c2},{ic:"sparkles",g:"linear-gradient(135deg,#007A76,#0ABAB5)",...c.c3}].map(x=>`<div class="card"><div class="card-icon" style="background:${x.g}">${icon(x.ic,28)}</div><h3>${x.t}</h3><p>${x.d}</p></div>`).join("")}
   </div>
 </div></section>
 
@@ -442,36 +442,36 @@ function render(){
         <div style="max-width:900px;margin:0 auto;">
           <div style="text-align:center;margin-bottom:3rem;">
             <h2 style="font-size:clamp(1.8rem,4vw,2.8rem);font-weight:800;">
-              <span style="background:linear-gradient(135deg,#667eea,#764ba2);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">IOAI 2025</span> Beijing
+              <span style="background:linear-gradient(135deg,#0ABAB5,#007A76);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">IOAI 2025</span> Beijing
             </h2>
             <p style="color:#94a3b8;margin-top:0.5rem;font-size:1.1rem;">${i2.subtitle}</p>
           </div>
           <div style="display:grid;gap:2rem;">
             <!-- Scientific Round -->
             <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-radius:16px;padding:2rem;">
-              <h3 style="font-size:1.3rem;font-weight:700;color:#667eea;margin-bottom:1rem;">${i2.scientific}</h3>
+              <h3 style="font-size:1.3rem;font-weight:700;color:#0ABAB5;margin-bottom:1rem;">${i2.scientific}</h3>
               <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:1rem;">
-                <a href="https://github.com/IOAI-official/IOAI-2025/tree/main/Scientific%20Round/Radar" target="_blank" style="display:block;padding:1rem;background:rgba(102,126,234,0.08);border:1px solid rgba(102,126,234,0.15);border-radius:10px;transition:all .2s;">
+                <a href="https://github.com/IOAI-official/IOAI-2025/tree/main/Scientific%20Round/Radar" target="_blank" style="display:block;padding:1rem;background:rgba(102,126,234,0.08);border:1px solid rgba(10,186,181,0.15);border-radius:10px;transition:all .2s;">
                   <span style="font-weight:600;color:#e2e8f0;">Radar</span>
                   <span style="display:block;font-size:0.85rem;color:#64748b;margin-top:4px;">${i2.tasks.radar}</span>
                 </a>
-                <a href="https://github.com/IOAI-official/IOAI-2025/tree/main/Scientific%20Round/Counting%20Chicken" target="_blank" style="display:block;padding:1rem;background:rgba(102,126,234,0.08);border:1px solid rgba(102,126,234,0.15);border-radius:10px;transition:all .2s;">
+                <a href="https://github.com/IOAI-official/IOAI-2025/tree/main/Scientific%20Round/Counting%20Chicken" target="_blank" style="display:block;padding:1rem;background:rgba(102,126,234,0.08);border:1px solid rgba(10,186,181,0.15);border-radius:10px;transition:all .2s;">
                   <span style="font-weight:600;color:#e2e8f0;">Counting Chicken</span>
                   <span style="display:block;font-size:0.85rem;color:#64748b;margin-top:4px;">${i2.tasks.chicken}</span>
                 </a>
-                <a href="https://github.com/IOAI-official/IOAI-2025/tree/main/Scientific%20Round/Concepts" target="_blank" style="display:block;padding:1rem;background:rgba(102,126,234,0.08);border:1px solid rgba(102,126,234,0.15);border-radius:10px;transition:all .2s;">
+                <a href="https://github.com/IOAI-official/IOAI-2025/tree/main/Scientific%20Round/Concepts" target="_blank" style="display:block;padding:1rem;background:rgba(102,126,234,0.08);border:1px solid rgba(10,186,181,0.15);border-radius:10px;transition:all .2s;">
                   <span style="font-weight:600;color:#e2e8f0;">Concepts</span>
                   <span style="display:block;font-size:0.85rem;color:#64748b;margin-top:4px;">${i2.tasks.concepts}</span>
                 </a>
-                <a href="https://github.com/IOAI-official/IOAI-2025/tree/main/Scientific%20Round/Restroom%20Icon%20Matching" target="_blank" style="display:block;padding:1rem;background:rgba(102,126,234,0.08);border:1px solid rgba(102,126,234,0.15);border-radius:10px;transition:all .2s;">
+                <a href="https://github.com/IOAI-official/IOAI-2025/tree/main/Scientific%20Round/Restroom%20Icon%20Matching" target="_blank" style="display:block;padding:1rem;background:rgba(102,126,234,0.08);border:1px solid rgba(10,186,181,0.15);border-radius:10px;transition:all .2s;">
                   <span style="font-weight:600;color:#e2e8f0;">Restroom Icon Matching</span>
                   <span style="display:block;font-size:0.85rem;color:#64748b;margin-top:4px;">${i2.tasks.restroom}</span>
                 </a>
-                <a href="https://github.com/IOAI-official/IOAI-2025/tree/main/Scientific%20Round/Antique%20Painting%20Authentication" target="_blank" style="display:block;padding:1rem;background:rgba(102,126,234,0.08);border:1px solid rgba(102,126,234,0.15);border-radius:10px;transition:all .2s;">
+                <a href="https://github.com/IOAI-official/IOAI-2025/tree/main/Scientific%20Round/Antique%20Painting%20Authentication" target="_blank" style="display:block;padding:1rem;background:rgba(102,126,234,0.08);border:1px solid rgba(10,186,181,0.15);border-radius:10px;transition:all .2s;">
                   <span style="font-weight:600;color:#e2e8f0;">Antique Painting Auth</span>
                   <span style="display:block;font-size:0.85rem;color:#64748b;margin-top:4px;">${i2.tasks.antique}</span>
                 </a>
-                <a href="https://github.com/IOAI-official/IOAI-2025/tree/main/Scientific%20Round/Pixel%20Efficiency" target="_blank" style="display:block;padding:1rem;background:rgba(102,126,234,0.08);border:1px solid rgba(102,126,234,0.15);border-radius:10px;transition:all .2s;">
+                <a href="https://github.com/IOAI-official/IOAI-2025/tree/main/Scientific%20Round/Pixel%20Efficiency" target="_blank" style="display:block;padding:1rem;background:rgba(102,126,234,0.08);border:1px solid rgba(10,186,181,0.15);border-radius:10px;transition:all .2s;">
                   <span style="font-weight:600;color:#e2e8f0;">Pixel Efficiency</span>
                   <span style="display:block;font-size:0.85rem;color:#64748b;margin-top:4px;">${i2.tasks.pixel}</span>
                 </a>
@@ -479,8 +479,8 @@ function render(){
             </div>
             <!-- Team Challenge -->
             <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-radius:16px;padding:2rem;">
-              <h3 style="font-size:1.3rem;font-weight:700;color:#a78bfa;margin-bottom:1rem;">${i2.team}</h3>
-              <a href="https://github.com/IOAI-official/IOAI-2025/tree/main/Team%20Challenge" target="_blank" style="display:inline-block;padding:1rem 1.5rem;background:rgba(167,139,250,0.08);border:1px solid rgba(167,139,250,0.15);border-radius:10px;transition:all .2s;">
+              <h3 style="font-size:1.3rem;font-weight:700;color:#0ABAB5;margin-bottom:1rem;">${i2.team}</h3>
+              <a href="https://github.com/IOAI-official/IOAI-2025/tree/main/Team%20Challenge" target="_blank" style="display:inline-block;padding:1rem 1.5rem;background:rgba(10,186,181,0.08);border:1px solid rgba(10,186,181,0.15);border-radius:10px;transition:all .2s;">
                 <span style="font-weight:600;color:#e2e8f0;">Factory of the Future</span>
                 <span style="display:block;font-size:0.85rem;color:#64748b;margin-top:4px;">${i2.tasks.factory}</span>
               </a>
@@ -505,7 +505,7 @@ function render(){
             </div>
           </div>
           <p style="text-align:center;margin-top:2rem;color:#64748b;font-size:0.9rem;">
-            ${i2.footer} <a href="https://github.com/IOAI-official/IOAI-2025" target="_blank" style="color:#667eea;text-decoration:underline;">GitHub</a>
+            ${i2.footer} <a href="https://github.com/IOAI-official/IOAI-2025" target="_blank" style="color:#0ABAB5;text-decoration:underline;">GitHub</a>
           </p>
         </div>
       </section>
