@@ -1,0 +1,575 @@
+{
+  "days": [
+    {
+      "id": "aug-1",
+      "number": "Day − · Early arrival",
+      "title": "Welcome to Astana",
+      "date": "Saturday, August 1",
+      "note": "KNUS — Kazakh National University of Sports",
+      "events": [
+        {
+          "time": "00:00 – 23:59",
+          "descriptionHtml": "Teams Arrival",
+          "locationHtml": "Airport",
+          "attendees": "Contestants, Team Leaders, Observers"
+        },
+        {
+          "time": "09:00 – 11:00",
+          "descriptionHtml": "Breakfast",
+          "locationHtml": "KNUS",
+          "attendees": "Contestants, Team Leaders, Observers"
+        },
+        {
+          "time": "13:00 – 14:00",
+          "descriptionHtml": "Lunch",
+          "locationHtml": "KNUS",
+          "attendees": "Contestants, Team Leaders, Observers"
+        },
+        {
+          "time": "19:00 – 20:00",
+          "descriptionHtml": "Dinner",
+          "locationHtml": "KNUS",
+          "attendees": "Contestants, Team Leaders, Observers"
+        }
+      ]
+    },
+    {
+      "id": "aug-2",
+      "number": "Day 1 · Arrival",
+      "title": "Arrival Day",
+      "date": "Sunday, August 2",
+      "note": "KNUS — Kazakh National University of Sports",
+      "events": [
+        {
+          "time": "00:00 – 23:59",
+          "descriptionHtml": "Teams Arrival",
+          "locationHtml": "Airport",
+          "attendees": "Contestants, Team Leaders, Observers"
+        },
+        {
+          "time": "09:00 – 11:00",
+          "descriptionHtml": "Breakfast",
+          "locationHtml": "KNUS",
+          "attendees": "Contestants, Team Leaders, Observers"
+        },
+        {
+          "time": "13:00 – 14:00",
+          "descriptionHtml": "Lunch",
+          "locationHtml": "KNUS",
+          "attendees": "Contestants, Team Leaders, Observers"
+        },
+        {
+          "time": "19:00 – 20:00",
+          "descriptionHtml": "Dinner",
+          "locationHtml": "KNUS",
+          "attendees": "Contestants, Team Leaders, Observers"
+        }
+      ]
+    },
+    {
+      "id": "aug-3",
+      "number": "Day 2 · Opening",
+      "title": "Opening Day",
+      "date": "Monday, August 3",
+      "note": "KNUS — Kazakh National University of Sports",
+      "events": [
+        {
+          "time": "07:00 – 09:00",
+          "descriptionHtml": "Breakfast",
+          "locationHtml": "KNUS",
+          "attendees": "Contestants, Team Leaders, Observers"
+        },
+        {
+          "time": "07:30 – 09:30",
+          "descriptionHtml": "Practice Round — obligatory",
+          "locationHtml": "KNUS",
+          "attendees": "Contestants"
+        },
+        {
+          "time": "08:00 – 09:00",
+          "descriptionHtml": "General Assembly I",
+          "locationHtml": "KNUS",
+          "attendees": "Country Representatives"
+        },
+        {
+          "time": "09:30 – 10:30",
+          "descriptionHtml": "Transfer to Congress Center",
+          "locationHtml": "KNUS",
+          "attendees": "Contestants, Team Leaders, Observers"
+        },
+        {
+          "time": "11:00 – 12:30",
+          "descriptionHtml": "Opening Ceremony",
+          "locationHtml": "Congress Center",
+          "attendees": "Contestants, Team Leaders, Observers"
+        },
+        {
+          "time": "12:30 – 13:30",
+          "descriptionHtml": "Transfer to KNUS",
+          "locationHtml": "Congress Center",
+          "attendees": "Contestants"
+        },
+        {
+          "time": "13:00 – 14:00",
+          "descriptionHtml": "Transfer to KNUS",
+          "locationHtml": "Congress Center",
+          "attendees": "Team Leaders, Observers"
+        },
+        {
+          "time": "13:00 – 13:45",
+          "descriptionHtml": "Lunch",
+          "locationHtml": "KNUS",
+          "attendees": "Contestants"
+        },
+        {
+          "time": "13:00 – 14:30",
+          "descriptionHtml": "Lunch",
+          "locationHtml": "KNUS",
+          "attendees": "Team Leaders, Observers"
+        },
+        {
+          "time": "13:30 – 14:00",
+          "descriptionHtml": "Arrival at the Contest Hall",
+          "locationHtml": "KNUS",
+          "attendees": "Contestants"
+        },
+        {
+          "time": "14:00 – 19:00",
+          "descriptionHtml": "Team Challenge I",
+          "locationHtml": "KNUS",
+          "attendees": "Contestants"
+        },
+        {
+          "time": "14:30 – 15:30",
+          "descriptionHtml": "Breakout sessions<ul>\n<li>Alumni</li>\n<li>GAITE</li>\n</ul>",
+          "locationHtml": "KNUS",
+          "attendees": "Country Representatives"
+        },
+        {
+          "time": "15:30 – 16:30",
+          "descriptionHtml": "Community Meeting I",
+          "locationHtml": "KNUS",
+          "attendees": "Team Leaders, Observers"
+        },
+        {
+          "time": "16:30 – 18:30",
+          "descriptionHtml": "Regional breakouts<ul>\n<li>Africa — Red Amphitheater</li>\n<li>Asia-Pacific — Blue Amphitheater</li>\n<li>Americas — Coffee Room</li>\n<li>Europe — Host Room</li>\n</ul>",
+          "locationHtml": "KNUS",
+          "attendees": "Country Representatives"
+        },
+        {
+          "time": "19:00 – 20:00",
+          "descriptionHtml": "Appeals submission for Team Challenge I begins",
+          "locationHtml": "KNUS",
+          "attendees": "Contestants, Team Leaders"
+        },
+        {
+          "time": "19:00 – 20:30",
+          "descriptionHtml": "Dinner",
+          "locationHtml": "KNUS",
+          "attendees": "Contestants, Team Leaders, Observers"
+        },
+        {
+          "time": "20:00 – 22:00",
+          "descriptionHtml": "Chill Zone",
+          "locationHtml": "KNUS",
+          "attendees": "Contestants, Team Leaders, Observers"
+        }
+      ]
+    },
+    {
+      "id": "aug-4",
+      "number": "Day 3 · First round",
+      "title": "First Round",
+      "date": "Tuesday, August 4",
+      "note": "KNUS — Kazakh National University of Sports",
+      "events": [
+        {
+          "time": "06:00 – 09:00",
+          "descriptionHtml": "Translations <span style=\"color:#7f8999;font-weight:500\">(snacks served)</span>",
+          "locationHtml": "KNUS",
+          "attendees": "Team Leaders"
+        },
+        {
+          "time": "06:30 – 08:15",
+          "descriptionHtml": "Breakfast",
+          "locationHtml": "KNUS",
+          "attendees": "Contestants"
+        },
+        {
+          "time": "06:30 – 09:30",
+          "descriptionHtml": "Breakfast",
+          "locationHtml": "KNUS",
+          "attendees": "Team Leaders, Observers"
+        },
+        {
+          "time": "08:15 – 08:45",
+          "descriptionHtml": "Arrival at the Contest Hall",
+          "locationHtml": "KNUS, Contest Hall",
+          "attendees": "Contestants"
+        },
+        {
+          "time": "09:00 – 15:00",
+          "descriptionHtml": "First Round",
+          "locationHtml": "KNUS, Contest Hall",
+          "attendees": "Contestants"
+        },
+        {
+          "time": "09:30 – 13:30",
+          "descriptionHtml": "General Assembly II",
+          "locationHtml": "KNUS",
+          "attendees": "Country Representatives"
+        },
+        {
+          "time": "13:30 – 14:30",
+          "descriptionHtml": "Lunch",
+          "locationHtml": "KNUS",
+          "attendees": "Team Leaders, Observers"
+        },
+        {
+          "time": "15:00 – —",
+          "descriptionHtml": "Appeals submission for First Round begins",
+          "locationHtml": "KNUS",
+          "attendees": "Contestants, Team Leaders"
+        },
+        {
+          "time": "15:00 – 17:00",
+          "descriptionHtml": "Team Challenge debrief and face-to-face appeals",
+          "locationHtml": "KNUS",
+          "attendees": "Contestants, Team Leaders"
+        },
+        {
+          "time": "15:00 – 17:00",
+          "descriptionHtml": "Fun Sponsor Activities",
+          "locationHtml": "KNUS",
+          "attendees": "Contestants"
+        },
+        {
+          "time": "17:00 – 19:00",
+          "descriptionHtml": "Announcement of Team Challenge top 10",
+          "locationHtml": "KNUS",
+          "attendees": "Contestants, Team Leaders, Observers"
+        },
+        {
+          "time": "19:00 – 20:00",
+          "descriptionHtml": "Dinner",
+          "locationHtml": "KNUS",
+          "attendees": "Contestants, Team Leaders, Observers"
+        },
+        {
+          "time": "20:00 – 21:00",
+          "descriptionHtml": "First Round debrief",
+          "locationHtml": "KNUS",
+          "attendees": "International Jury, Team Leaders, Contestants"
+        }
+      ]
+    },
+    {
+      "id": "aug-5",
+      "number": "Day 4 · Activities",
+      "title": "Activities Day",
+      "date": "Wednesday, August 5",
+      "note": "KNUS — Kazakh National University of Sports",
+      "events": [
+        {
+          "time": "07:00 – 08:30",
+          "descriptionHtml": "Breakfast",
+          "locationHtml": "KNUS",
+          "attendees": "Contestants, Team Leaders, Observers"
+        },
+        {
+          "time": "08:30 – 10:30",
+          "descriptionHtml": "Transfer to Alem.ai",
+          "locationHtml": "KNUS",
+          "attendees": "Contestants"
+        },
+        {
+          "time": "09:00 – 11:45",
+          "descriptionHtml": "Excursion to Alem.ai",
+          "locationHtml": "<a href=\"https://alem.ai/\" target=\"_blank\" rel=\"noopener\">Alem.ai</a>",
+          "attendees": "Contestants"
+        },
+        {
+          "time": "09:00 – 11:00",
+          "descriptionHtml": "Community Meeting II",
+          "locationHtml": "KNUS, Blue Amphitheater",
+          "attendees": "Team Leaders, Observers"
+        },
+        {
+          "time": "12:00 – 13:00",
+          "descriptionHtml": "Transfer to KNUS",
+          "locationHtml": "Alem.ai",
+          "attendees": "Contestants"
+        },
+        {
+          "time": "13:00 – 14:00",
+          "descriptionHtml": "Lunch",
+          "locationHtml": "KNUS",
+          "attendees": "Contestants, Team Leaders, Observers"
+        },
+        {
+          "time": "14:00 – 15:00",
+          "descriptionHtml": "Free time <span style=\"color:#7f8999;font-weight:500\">(shuttles to Mega Silk Way)</span>",
+          "locationHtml": "—",
+          "attendees": "Contestants, Team Leaders, Observers"
+        },
+        {
+          "time": "14:00 – 15:30",
+          "descriptionHtml": "UNESCO AI Lecture",
+          "locationHtml": "KNUS",
+          "attendees": "Contestants"
+        },
+        {
+          "time": "15:30 – 19:00",
+          "descriptionHtml": "Sponsor Activities<ul>\n<li>Mini Ethno Activities</li>\n<li>Sport Activities</li>\n</ul>",
+          "locationHtml": "KNUS",
+          "attendees": "Contestants"
+        },
+        {
+          "time": "16:00 – 17:30",
+          "descriptionHtml": "UNESCO Meeting",
+          "locationHtml": "KNUS",
+          "attendees": "IOAI International Board"
+        },
+        {
+          "time": "19:00 – 19:00",
+          "descriptionHtml": "End of First Round appeals and face-to-face appeals session",
+          "locationHtml": "KNUS",
+          "attendees": "Contestants, Team Leaders"
+        },
+        {
+          "time": "19:00 – 20:00",
+          "descriptionHtml": "Dinner",
+          "locationHtml": "KNUS",
+          "attendees": "Contestants, Team Leaders, Observers"
+        },
+        {
+          "time": "20:30 – 21:00",
+          "descriptionHtml": "Soccer Finals",
+          "locationHtml": "KNUS",
+          "attendees": "Contestants"
+        },
+        {
+          "time": "21:00 – 21:15",
+          "descriptionHtml": "Activities winners announcement",
+          "locationHtml": "KNUS",
+          "attendees": "Contestants, Team Leaders, Observers"
+        }
+      ]
+    },
+    {
+      "id": "aug-6",
+      "number": "Day 5 · Second round",
+      "title": "Second Round",
+      "date": "Thursday, August 6",
+      "note": "KNUS — Kazakh National University of Sports",
+      "events": [
+        {
+          "time": "06:00 – 09:00",
+          "descriptionHtml": "Translations <span style=\"color:#7f8999;font-weight:500\">(snacks served)</span>",
+          "locationHtml": "KNUS",
+          "attendees": "Team Leaders"
+        },
+        {
+          "time": "06:30 – 08:15",
+          "descriptionHtml": "Breakfast",
+          "locationHtml": "KNUS",
+          "attendees": "Contestants"
+        },
+        {
+          "time": "06:30 – 09:30",
+          "descriptionHtml": "Breakfast",
+          "locationHtml": "KNUS",
+          "attendees": "Team Leaders, Observers"
+        },
+        {
+          "time": "08:00 – 08:30",
+          "descriptionHtml": "Arrival at the Contest Hall",
+          "locationHtml": "KNUS",
+          "attendees": "Contestants"
+        },
+        {
+          "time": "09:00 – 15:00",
+          "descriptionHtml": "Second Round",
+          "locationHtml": "KNUS",
+          "attendees": "Contestants"
+        },
+        {
+          "time": "09:30 – 10:00",
+          "descriptionHtml": "Transfer to Alem.ai",
+          "locationHtml": "KNUS",
+          "attendees": "Team Leaders, Observers"
+        },
+        {
+          "time": "10:00 – 11:20",
+          "descriptionHtml": "Excursion to Alem.ai",
+          "locationHtml": "<a href=\"https://alem.ai/\" target=\"_blank\" rel=\"noopener\">Alem.ai</a>",
+          "attendees": "Team Leaders, Observers"
+        },
+        {
+          "time": "11:00 – 13:30",
+          "descriptionHtml": "Community Meeting III: Kazakhstan AI strategy, moderated by UNESCO",
+          "locationHtml": "Alem.ai",
+          "attendees": "Team Leaders, Observers"
+        },
+        {
+          "time": "13:30 – 14:30",
+          "descriptionHtml": "Lunch",
+          "locationHtml": "Alem.ai",
+          "attendees": "Team Leaders, Observers"
+        },
+        {
+          "time": "14:30 – 15:00",
+          "descriptionHtml": "Transfer to KNUS",
+          "locationHtml": "Alem.ai",
+          "attendees": "Team Leaders, Observers"
+        },
+        {
+          "time": "15:00 – —",
+          "descriptionHtml": "Appeals submission for Second Round begins",
+          "locationHtml": "KNUS",
+          "attendees": "Contestants, Team Leaders"
+        },
+        {
+          "time": "15:00 – 16:00",
+          "descriptionHtml": "Transfer to Comic Con",
+          "locationHtml": "KNUS",
+          "attendees": "Contestants, Team Leaders, Observers"
+        },
+        {
+          "time": "16:00 – 18:00",
+          "descriptionHtml": "Comic Con 2026",
+          "locationHtml": "Barys Arena",
+          "attendees": "Contestants, Team Leaders, Observers"
+        },
+        {
+          "time": "18:00 – 19:00",
+          "descriptionHtml": "Transfer to KNUS",
+          "locationHtml": "Barys Arena",
+          "attendees": "Contestants, Team Leaders, Observers"
+        },
+        {
+          "time": "19:00 – 20:00",
+          "descriptionHtml": "Dinner",
+          "locationHtml": "KNUS",
+          "attendees": "Contestants, Team Leaders, Observers"
+        },
+        {
+          "time": "20:00 – 21:00",
+          "descriptionHtml": "Second Round debrief",
+          "locationHtml": "KNUS",
+          "attendees": "International Jury, Team Leaders, Contestants"
+        },
+        {
+          "time": "21:00 – 23:00",
+          "descriptionHtml": "End of Second Round appeals and face-to-face appeals session",
+          "locationHtml": "KNUS",
+          "attendees": "Contestants, Team Leaders"
+        },
+        {
+          "time": "21:00 – 23:00",
+          "descriptionHtml": "Cultural Exchange",
+          "locationHtml": "Hotel outside the Campus",
+          "attendees": "Team Leaders, Observers"
+        }
+      ]
+    },
+    {
+      "id": "aug-7",
+      "number": "Day 6 · Finals",
+      "title": "Finals & Awards",
+      "date": "Friday, August 7",
+      "note": "KNUS — Kazakh National University of Sports",
+      "events": [
+        {
+          "time": "07:00 – 09:00",
+          "descriptionHtml": "Breakfast",
+          "locationHtml": "KNUS",
+          "attendees": "Contestants, Team Leaders, Observers"
+        },
+        {
+          "time": "08:00 – 09:00",
+          "descriptionHtml": "Team Challenge top 10 transfer to Alem.ai",
+          "locationHtml": "KNUS",
+          "attendees": "Contestants"
+        },
+        {
+          "time": "09:00 – 10:00",
+          "descriptionHtml": "Transfer to Alem.ai",
+          "locationHtml": "KNUS",
+          "attendees": "Contestants, Team Leaders, Observers"
+        },
+        {
+          "time": "09:00 – 12:00",
+          "descriptionHtml": "Team Challenge II",
+          "locationHtml": "<a href=\"https://alem.ai/\" target=\"_blank\" rel=\"noopener\">Alem.ai</a>",
+          "attendees": "Contestants"
+        },
+        {
+          "time": "11:00 – 12:30",
+          "descriptionHtml": "Appeals for Team Challenge II",
+          "locationHtml": "Alem.ai",
+          "attendees": "Contestants, Team Leaders"
+        },
+        {
+          "time": "11:30 – 13:00",
+          "descriptionHtml": "Transfer to KNUS",
+          "locationHtml": "Alem.ai",
+          "attendees": "Contestants, Team Leaders, Observers"
+        },
+        {
+          "time": "13:00 – 14:30",
+          "descriptionHtml": "Lunch",
+          "locationHtml": "KNUS",
+          "attendees": "Contestants, Team Leaders, Observers"
+        },
+        {
+          "time": "16:00 – 18:00",
+          "descriptionHtml": "Closing &amp; Awards Ceremony",
+          "locationHtml": "KNUS",
+          "attendees": "Contestants, Team Leaders, Observers"
+        },
+        {
+          "time": "18:00 – 20:00",
+          "descriptionHtml": "Party and Dinner",
+          "locationHtml": "KNUS",
+          "attendees": "Contestants, Team Leaders, Observers"
+        }
+      ]
+    },
+    {
+      "id": "aug-8",
+      "number": "Day 7 · Departure",
+      "title": "Departure Day",
+      "date": "Saturday, August 8",
+      "note": "KNUS — Kazakh National University of Sports",
+      "events": [
+        {
+          "time": "00:00 – 23:59",
+          "descriptionHtml": "Transfer to Airport",
+          "locationHtml": "KNUS",
+          "attendees": "Contestants, Team Leaders, Observers"
+        },
+        {
+          "time": "07:00 – 09:00",
+          "descriptionHtml": "Breakfast",
+          "locationHtml": "KNUS",
+          "attendees": "Contestants, Team Leaders, Observers"
+        },
+        {
+          "time": "13:00 – 14:00",
+          "descriptionHtml": "Lunch",
+          "locationHtml": "KNUS",
+          "attendees": "Contestants, Team Leaders, Observers"
+        },
+        {
+          "time": "19:00 – 20:00",
+          "descriptionHtml": "Dinner",
+          "locationHtml": "KNUS",
+          "attendees": "Contestants, Team Leaders, Observers"
+        }
+      ]
+    }
+  ]
+}
+
