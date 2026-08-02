@@ -40,16 +40,20 @@ h1{font-size:clamp(46px,8vw,78px);line-height:1;letter-spacing:-.055em;font-weig
 .day-events{background:rgba(255,255,255,.025);border:1px solid var(--line);border-radius:18px;overflow:hidden}
 .event{display:grid;grid-template-columns:128px minmax(230px,1.25fr) minmax(150px,.65fr) minmax(210px,1fr);gap:18px;align-items:start;padding:18px 20px;border-bottom:1px solid rgba(255,255,255,.065);transition:background .2s}
 .event:last-child{border-bottom:0}.event:hover{background:rgba(30,250,224,.035)}
+.event.mandatory{position:relative;background:linear-gradient(90deg,rgba(30,250,224,.095),rgba(30,250,224,.025) 54%,transparent);box-shadow:inset 3px 0 0 var(--accent)}
+.event.mandatory:hover{background:linear-gradient(90deg,rgba(30,250,224,.14),rgba(30,250,224,.045) 58%,transparent)}
 .event.head{padding-block:12px;background:rgba(255,255,255,.035);color:#687386;font-size:10px;font-weight:800;letter-spacing:.11em;text-transform:uppercase}
 .time{display:flex;align-items:baseline;gap:5px;font-size:14px;font-weight:800;font-variant-numeric:tabular-nums;color:#fff}
 .time span{color:#586376;font-size:11px;font-weight:600}
 .description{font-size:14px;line-height:1.5;font-weight:650;color:#f2f5f8}
+.mandatory-description{display:flex;align-items:center;gap:9px}
+.mandatory-mark{width:21px;height:21px;border-radius:7px;background:linear-gradient(135deg,#7afcee,var(--accent));box-shadow:0 4px 14px rgba(30,250,224,.24);flex:none}
 .description ul{margin:8px 0 0 18px;color:rgba(255,255,255,.66);font-weight:500}
 .location,.attendees{font-size:13px;line-height:1.55;color:var(--muted)}
 .location{color:#9bece3;font-weight:600}
 .location a{text-decoration:underline;text-underline-offset:3px}
 .note{display:flex;align-items:flex-start;gap:10px;margin-top:12px;color:#738094;font-size:12px;line-height:1.5}
-.note::before{content:"*";color:var(--accent);font-weight:800}
+.note::before{content:"";width:5px;height:5px;margin-top:6px;border-radius:50%;background:var(--accent);box-shadow:0 0 8px rgba(30,250,224,.4);flex:none}
 .schedule-status{padding:70px 20px;text-align:center;color:var(--muted);font-size:14px}
 .schedule-status.error{color:#fca5a5}
 .source-note{margin-top:48px;padding:20px 22px;border-radius:14px;background:rgba(30,250,224,.055);border:1px solid rgba(30,250,224,.14);color:rgba(255,255,255,.58);font-size:13px;line-height:1.6}

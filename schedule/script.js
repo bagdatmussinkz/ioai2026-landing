@@ -14,13 +14,17 @@
   }
 
   function eventMarkup(event) {
+    const isMandatory = event.mandatory === true;
+    const description = isMandatory
+      ? '<span class="mandatory-mark" aria-hidden="true"></span><span>' + event.descriptionHtml + '</span>'
+      : event.descriptionHtml;
     const timeParts = event.time.split(' – ');
     const time = escapeHtml(timeParts[0]) +
       (timeParts.length > 1 ? ' <span>–</span> ' + escapeHtml(timeParts.slice(1).join(' – ')) : '');
 
-    return '<div class="event">' +
+    return '<div class="event' + (isMandatory ? ' mandatory' : '') + '">' +
       '<div class="time">' + time + '</div>' +
-      '<div class="description">' + event.descriptionHtml + '</div>' +
+      '<div class="description' + (isMandatory ? ' mandatory-description' : '') + '">' + description + '</div>' +
       '<div class="location">' + event.locationHtml + '</div>' +
       '<div class="attendees">' + escapeHtml(event.attendees) + '</div>' +
     '</div>';
