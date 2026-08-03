@@ -52,6 +52,9 @@ h1{font-size:clamp(46px,8vw,78px);line-height:1;letter-spacing:-.055em;font-weig
 .location,.attendees{font-size:13px;line-height:1.55;color:var(--muted)}
 .location{color:#9bece3;font-weight:600}
 .location a{text-decoration:underline;text-underline-offset:3px}
+.attendees{display:flex;align-items:center;flex-wrap:wrap;gap:6px}
+.attendee-badge{display:inline-flex;align-items:center;min-height:25px;padding:4px 8px;border:1px solid var(--attendee-border);border-radius:8px;background:var(--attendee-bg);color:var(--attendee-color);font-size:11px;font-weight:750;line-height:1.2;white-space:nowrap}
+.attendee-empty{color:#586376}
 .note{display:flex;align-items:flex-start;gap:10px;margin-top:12px;color:#738094;font-size:12px;line-height:1.5}
 .note::before{content:"";width:5px;height:5px;margin-top:6px;border-radius:50%;background:var(--accent);box-shadow:0 0 8px rgba(30,250,224,.4);flex:none}
 .schedule-status{padding:70px 20px;text-align:center;color:var(--muted);font-size:14px}
@@ -66,7 +69,7 @@ h1{font-size:clamp(46px,8vw,78px);line-height:1;letter-spacing:-.055em;font-weig
   .event{grid-template-columns:105px minmax(0,1fr)}
   .event.head{display:none}.location,.attendees{grid-column:2}
   .location::before,.attendees::before{display:block;margin-bottom:2px;color:#5f6a7b;font-size:9px;font-weight:800;letter-spacing:.1em;text-transform:uppercase}
-  .location::before{content:"Location"}.attendees::before{content:"Attendees"}
+  .location::before{content:"Location"}.attendees::before{content:"Attendees";flex:0 0 100%}
 }
 @media(max-width:600px){
   html{scroll-padding-top:140px}
@@ -75,6 +78,6 @@ h1{font-size:clamp(46px,8vw,78px);line-height:1;letter-spacing:-.055em;font-weig
   .day-nav-wrap{top:70px}.day-nav{padding:10px 16px}
   .schedule{padding:42px 16px 70px}.day{padding:30px 0;scroll-margin-top:140px}.day-heading h2{font-size:22px}
   .day-events{border-radius:14px}.event{grid-template-columns:1fr;gap:8px;padding:17px 16px}
-  .time{padding-bottom:3px;color:#7afcee}.location,.attendees{grid-column:1}.location::before,.attendees::before{display:inline;margin-right:7px}
+  .time{padding-bottom:3px;color:#7afcee}.location,.attendees{grid-column:1}.location::before,.attendees::before{display:inline;margin-right:7px}.attendees::before{flex-basis:auto}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.day-nav a{transition:none}}

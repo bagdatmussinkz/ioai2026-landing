@@ -13,7 +13,29 @@
     })[character]);
   }
 
-  function eventMarkup(event) {
+  function hexToRgba(color, alpha) {
+    if (!/^#[0-9a-f]{6}$/i.test(color)) return 'rgba(148,163,184,' + alpha + ')';
+    const value = Number.parseInt(color.slice(1), 16);
+    return 'rgba(' + (value >> 16) + ',' + ((value >> 8) & 255) + ',' + (value & 255) + ',' + alpha + ')';
+  }
+
+  function attendeeMarkup(attendees, attendeeTypes) {
+    if (!Array.isArray(attendees) || attendees.length === 0) {
+      return '<span class="attendee-empty">—</span>';
+    }
+
+    return attendees.map(id => {
+      const type = attendeeTypes[id] || {label: id, color: '#94A3B8'};
+      const color = /^#[0-9a-f]{6}$/i.test(type.color) ? type.color : '#94A3B8';
+      const style = '--attendee-color:' + color +
+        ';--attendee-bg:' + hexToRgba(color, 0.13) +
+        ';--attendee-border:' + hexToRgba(color, 0.34);
+
+      return '<span class="attendee-badge" style="' + style + '">' + escapeHtml(type.label) + '</span>';
+    }).join('');
+  }
+
+  function eventMarkup(event, attendeeTypes) {
     const isMandatory = event.mandatory === true;
     const description = isMandatory
       ? '<span class="mandatory-mark" aria-hidden="true"></span><span>' + event.descriptionHtml + '</span>'
@@ -26,11 +48,11 @@
       '<div class="time">' + time + '</div>' +
       '<div class="description' + (isMandatory ? ' mandatory-description' : '') + '">' + description + '</div>' +
       '<div class="location">' + event.locationHtml + '</div>' +
-      '<div class="attendees">' + escapeHtml(event.attendees) + '</div>' +
+      '<div class="attendees">' + attendeeMarkup(event.attendees, attendeeTypes) + '</div>' +
     '</div>';
   }
 
-  function dayMarkup(day) {
+  function dayMarkup(day, attendeeTypes) {
     return '<section class="day" id="' + escapeHtml(day.id) + '">' +
       '<div class="day-heading">' +
         '<span class="day-number">' + escapeHtml(day.number) + '</span>' +
@@ -39,7 +61,7 @@
       '</div>' +
       '<div><div class="day-events">' +
         '<div class="event head"><div>Time</div><div>Description</div><div>Location</div><div>Attendees</div></div>' +
-        day.events.map(eventMarkup).join('') +
+        day.events.map(event => eventMarkup(event, attendeeTypes)).join('') +
       '</div><p class="note">' + escapeHtml(day.note) + '</p></div>' +
     '</section>';
   }
@@ -50,6 +72,7 @@
 
     const schedule = await response.json();
     const days = schedule.days;
+    const attendeeTypes = schedule.attendeeTypes || {};
 
     nav.innerHTML = days.map((day, index) =>
       '<a' + (index === 0 ? ' class="active" aria-current="true"' : '') +
@@ -57,7 +80,7 @@
       escapeHtml(day.id.replace('aug-', 'Aug ')) +
       '</a>'
     ).join('');
-    scheduleContainer.innerHTML = days.map(dayMarkup).join('');
+    scheduleContainer.innerHTML = days.map(day => dayMarkup(day, attendeeTypes)).join('');
 
     const links = [...nav.querySelectorAll('a')];
     const sections = links.map(link => document.querySelector(link.hash));
