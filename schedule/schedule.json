@@ -540,7 +540,7 @@
           ]
         },
         {
-          "time": "12:30 – 15:00",
+          "time": "12:30 – 14:00",
           "descriptionHtml": "Lunch",
           "locationHtml": "KNUS, Cafe, Jury cafe",
           "attendees": [
@@ -560,7 +560,7 @@
         },
         {
           "time": "13:30 – 14:00",
-          "descriptionHtml": "Transfer to Alem.ai",
+          "descriptionHtml": "Transfer to Alem.ai (top 10 team challenge 1-5 Teams Debugg Phase)",
           "locationHtml": "KNUS",
           "attendees": [
             "contestants"
@@ -569,6 +569,14 @@
         {
           "time": "14:00 – 14:30",
           "descriptionHtml": "Transfer to KNUS",
+          "locationHtml": "Alem.ai",
+          "attendees": [
+            "contestants"
+          ]
+        },
+        {
+          "time": "09:00 – 14:00",
+          "descriptionHtml": "Top 10 team challenge: 1-5 Teams Debugg Phase",
           "locationHtml": "Alem.ai",
           "attendees": [
             "contestants"
@@ -585,7 +593,7 @@
         },
         {
           "time": "15:30 – 19:00",
-          "descriptionHtml": "Sponsors/Ethno/Sport Activities<br>- Kazakh Ethno Day powered by Kaspi.kz<br>- IOAI Football Tournament powered by Freedom<br>- IMC Chess Tournament",
+          "descriptionHtml": "Sponsors/Ethno/Sports Activities<br>- Kazakh Ethno Day powered by Kaspi.kz<br>- IOAI Football Tournament powered by Freedom<br>- IMC Chess Tournament",
           "locationHtml": "KNUS, Lounge Zone",
           "attendees": [
             "contestants",
@@ -606,7 +614,7 @@
         {
           "time": "19:00 – 20:00",
           "descriptionHtml": "Dinner",
-          "locationHtml": "KNUS, Cafe",
+          "locationHtml": "KNUS, Cafe, Jury Cafe",
           "attendees": [
             "contestants",
             "team-leaders",
@@ -615,7 +623,7 @@
         },
         {
           "time": "20:30 – 21:00",
-          "descriptionHtml": "Soccer finals",
+          "descriptionHtml": "Table tennis tournament finals",
           "locationHtml": "KNUS, sport field",
           "attendees": [
             "contestants",
@@ -625,7 +633,7 @@
         },
         {
           "time": "21:00 – 21:15",
-          "descriptionHtml": "Announce activities winners",
+          "descriptionHtml": "Announcement of activities winners",
           "locationHtml": "KNUS",
           "attendees": [
             "contestants",
