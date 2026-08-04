@@ -297,7 +297,7 @@
         {
           "time": "05:00 – 08:00",
           "descriptionHtml": "Translations (snacks served in the translation session)",
-          "locationHtml": "KNUS, Jury Cafe",
+          "locationHtml": "KNUS, Jury Room",
           "attendees": [
             "team-leaders"
           ]
@@ -336,7 +336,7 @@
           ]
         },
         {
-          "time": "09:00 – 15:00",
+          "time": "10:00 – 16:00",
           "descriptionHtml": "First Round",
           "locationHtml": "KNUS, Main Hall",
           "attendees": [
