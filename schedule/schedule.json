@@ -23,6 +23,10 @@
     "guests": {
       "label": "Guests",
       "color": "#FACC15"
+    },
+    "galbot-team": {
+      "label": "Galbot Team",
+      "color": "#C084FC"
     }
   },
   "days": [
@@ -304,10 +308,10 @@
         },
         {
           "time": "06:30 – 08:15",
-          "descriptionHtml": "Quarantine for Team Leaders",
+          "descriptionHtml": "Breakfast",
           "locationHtml": "KNUS, Cafe",
           "attendees": [
-            "team-leaders"
+            "contestants"
           ]
         },
         {
@@ -315,28 +319,20 @@
           "descriptionHtml": "Breakfast",
           "locationHtml": "KNUS, Cafe, Jury Cafe",
           "attendees": [
-            "contestants"
-          ]
-        },
-        {
-          "time": "08:00 – 09:30",
-          "descriptionHtml": "Breakfast",
-          "locationHtml": "KNUS, Jury Cafe",
-          "attendees": [
             "team-leaders",
             "observers"
           ]
         },
         {
-          "time": "08:15 – 08:45",
-          "descriptionHtml": "Arriving the Contest Hall",
-          "locationHtml": "KNUS, Contest Hall",
+          "time": "08:00 – 09:30",
+          "descriptionHtml": "Quarantine for Team Leaders",
+          "locationHtml": "KNUS, Jury Room",
           "attendees": [
-            "contestants"
+            "team-leaders"
           ]
         },
         {
-          "time": "10:00 – 16:00",
+          "time": "09:00 – 16:35",
           "descriptionHtml": "First Round",
           "locationHtml": "KNUS, Contest Hall",
           "attendees": [
@@ -345,15 +341,16 @@
           "mandatory": true
         },
         {
-          "time": "09:30 – 13:30",
+          "time": "10:30 – 14:30",
           "descriptionHtml": "Jane Street General Assembly II",
           "locationHtml": "KNUS, Red Amphitheatre",
           "attendees": [
-            "country-representatives"
+            "team-leaders",
+            "observers"
           ]
         },
         {
-          "time": "13:30 – 14:30",
+          "time": "13:30 – 15:00",
           "descriptionHtml": "Lunch",
           "locationHtml": "KNUS, Cafe, Jury Cafe",
           "attendees": [
@@ -362,43 +359,39 @@
           ]
         },
         {
-          "time": "13:30 – 14:30",
-          "descriptionHtml": "Next hosts applicants meet the previous hosts",
-          "locationHtml": "Cafe",
-          "attendees": [
-            "country-representatives"
-          ]
-        },
-        {
-          "time": "15:00",
+          "time": "16:35",
           "descriptionHtml": "Appeals submission First Round start",
           "locationHtml": "online",
           "attendees": [
             "contestants",
-            "team-leaders"
+            "team-leaders",
+            "observers"
           ]
         },
         {
-          "time": "15:00 – 17:00",
+          "time": "16:35 – 18:35",
           "descriptionHtml": "Debrief Team Challenge and f2f apeals seession Team Challenge",
           "locationHtml": "KNUS, Red Amphitheatre",
           "attendees": [
             "contestants",
-            "team-leaders"
+            "team-leaders",
+            "observers"
           ]
         },
         {
-          "time": "15:00 – 17:00",
+          "time": "16:35 – 18:35",
           "descriptionHtml": "Fun Sponsors Activities",
           "locationHtml": "KNUS, Chill Zone",
           "attendees": [
-            "contestants"
+            "contestants",
+            "team-leaders",
+            "observers"
           ]
         },
         {
-          "time": "16:30 – 17:00",
-          "descriptionHtml": "Announce top 10 team challenge<br>Soccer tournament eliminations",
-          "locationHtml": "KNUS",
+          "time": "16:35 – 16:40",
+          "descriptionHtml": "Announce top 10 team challenge",
+          "locationHtml": "online",
           "attendees": [
             "contestants",
             "team-leaders",
@@ -407,22 +400,33 @@
         },
         {
           "time": "17:00 – 19:00",
+          "descriptionHtml": "Soccer tournament eliminations",
+          "locationHtml": "Contest Hall - 2 floor,<br>Basketball oustside court",
+          "attendees": [
+            "contestants",
+            "team-leaders",
+            "observers"
+          ]
+        },
+        {
+          "time": "17:00 – 17:30",
           "descriptionHtml": "Transfer to Alem.ai",
-          "locationHtml": "KNUS",
+          "locationHtml": "KNUS, Pickup zone CH",
           "attendees": [
             "contestants"
           ]
         },
         {
-          "time": "17:00 – 19:00",
+          "time": "17:30 – 19:30",
           "descriptionHtml": "Top 10 team challenge:<br>1-5 Teams Debugg Phase",
           "locationHtml": "Alem.ai",
           "attendees": [
-            "contestants"
+            "contestants",
+            "galbot-team"
           ]
         },
         {
-          "time": "19:00 – 19:20",
+          "time": "19:00 – 20:30",
           "descriptionHtml": "Dinner",
           "locationHtml": "KNUS, Cafe, Jury Cafe",
           "attendees": [
@@ -432,7 +436,7 @@
           ]
         },
         {
-          "time": "19:00 – 20:00",
+          "time": "19:30 – 20:00",
           "descriptionHtml": "Transfer to KNUS",
           "locationHtml": "Alem.ai",
           "attendees": [
@@ -442,7 +446,7 @@
         {
           "time": "19:30 – 20:00",
           "descriptionHtml": "Transfer to Alem.ai",
-          "locationHtml": "KNUS",
+          "locationHtml": "KNUS, Pickup zone CH",
           "attendees": [
             "contestants"
           ]
@@ -452,9 +456,9 @@
           "descriptionHtml": "1st round debrief",
           "locationHtml": "KNUS, Red Amphitheatre",
           "attendees": [
-            "international-jury",
             "contestants",
-            "team-leaders"
+            "team-leaders",
+            "observers"
           ]
         },
         {
@@ -466,7 +470,7 @@
           ]
         },
         {
-          "time": "20:00 – 22:00",
+          "time": "22:00 – 22:30",
           "descriptionHtml": "Transfer to KNUS",
           "locationHtml": "Alem.ai",
           "attendees": [
@@ -497,7 +501,8 @@
           "descriptionHtml": "Transfer to Alem.ai",
           "locationHtml": "KNUS",
           "attendees": [
-            "contestants"
+            "contestants",
+            "galbot-team"
           ]
         },
         {
@@ -510,42 +515,34 @@
         },
         {
           "time": "09:00 – 11:45",
-          "descriptionHtml": "Transfer to KNUS",
-          "locationHtml": "Alem.ai",
-          "attendees": [
-            "contestants"
-          ]
-        },
-        {
-          "time": "09:00 – 11:00",
           "descriptionHtml": "Excursion to alem.ai",
-          "locationHtml": "KNUS: Blue Amphitheater",
+          "locationHtml": "Alem.ai",
           "attendees": [
             "contestants"
           ],
           "mandatory": true
         },
         {
-          "time": "09:30 – 12:30",
+          "time": "09:00 – 11:00",
           "descriptionHtml": "Community meeting II",
-          "locationHtml": "Alem.ai",
+          "locationHtml": "KNUS: Blue Amphitheater",
           "attendees": [
             "team-leaders",
             "observers"
           ]
         },
         {
-          "time": "12:30 – 15:00",
+          "time": "09:30 – 12:30",
           "descriptionHtml": "Transfer to KNUS",
-          "locationHtml": "KNUS, Cafe, Jury cafe",
+          "locationHtml": "Alem.ai",
           "attendees": [
             "contestants"
           ]
         },
         {
-          "time": "13:30 – 16:00",
+          "time": "12:30 – 15:00",
           "descriptionHtml": "Lunch",
-          "locationHtml": "KNUS",
+          "locationHtml": "KNUS, Cafe, Jury cafe",
           "attendees": [
             "contestants",
             "team-leaders",
@@ -553,7 +550,7 @@
           ]
         },
         {
-          "time": "13:30 – 14:00",
+          "time": "13:30 – 16:00",
           "descriptionHtml": "FREE time for adults - 2 shuttles to Mega Silkway and 2 back",
           "locationHtml": "KNUS",
           "attendees": [
@@ -562,16 +559,16 @@
           ]
         },
         {
-          "time": "14:00 – 14:30",
+          "time": "13:30 – 14:00",
           "descriptionHtml": "Transfer to Alem.ai",
-          "locationHtml": "Alem.ai",
+          "locationHtml": "KNUS",
           "attendees": [
             "contestants"
           ]
         },
         {
-          "time": "14:00 – 19:00",
-          "descriptionHtml": "Top 10 team challenge: 1-5 Teams Debugg Phase",
+          "time": "14:00 – 14:30",
+          "descriptionHtml": "Transfer to KNUS",
           "locationHtml": "Alem.ai",
           "attendees": [
             "contestants"
@@ -589,19 +586,11 @@
         {
           "time": "15:30 – 19:00",
           "descriptionHtml": "Sponsors/Ethno/Sport Activities<br>- Kazakh Ethno Day powered by Kaspi.kz<br>- IOAI Football Tournament powered by Freedom<br>- IMC Chess Tournament",
-          "locationHtml": "KNUS, Football field",
+          "locationHtml": "KNUS, Lounge Zone",
           "attendees": [
             "contestants",
             "team-leaders",
             "observers"
-          ]
-        },
-        {
-          "time": "19:00 – 19:20",
-          "descriptionHtml": "Transfer to KNUS",
-          "locationHtml": "Alem.ai",
-          "attendees": [
-            "contestants"
           ]
         },
         {
@@ -666,6 +655,7 @@
           "descriptionHtml": "Breakfast",
           "locationHtml": "KNUS, Cafe",
           "attendees": [
+            "contestants",
             "team-leaders",
             "observers"
           ]
@@ -675,7 +665,8 @@
           "descriptionHtml": "Breakfast",
           "locationHtml": "KNUS, Jury Room",
           "attendees": [
-            "contestants"
+            "team-leaders",
+            "observers"
           ]
         },
         {
@@ -792,27 +783,23 @@
         },
         {
           "time": "18:00 – 18:30",
-          "descriptionHtml": "Dinner",
+          "descriptionHtml": "Transfer to Alem.al",
           "locationHtml": "KNUS",
           "attendees": [
-            "contestants",
-            "team-leaders",
-            "observers"
+            "contestants"
           ]
         },
         {
           "time": "18:30 – 20:30",
-          "descriptionHtml": "Debrief 2nd round",
+          "descriptionHtml": "Top 10 team challenge: 6-10 Teams Debugg Phase",
           "locationHtml": "Alem.ai",
           "attendees": [
-            "contestants",
-            "team-leaders",
-            "observers"
+            "contestants"
           ]
         },
         {
           "time": "19:00 – 20:00",
-          "descriptionHtml": "End of 2nd Round appeals and f2f appeals session Round 2",
+          "descriptionHtml": "Dinner",
           "locationHtml": "KNUS, Cafe, Jury cafe",
           "attendees": [
             "contestants",
@@ -822,9 +809,10 @@
         },
         {
           "time": "20:00 – 21:00",
-          "descriptionHtml": "Huawei Cultural Exchange Day (adults)",
+          "descriptionHtml": "Debrief 2nd round",
           "locationHtml": "KNUS, Red amphitheatre",
           "attendees": [
+            "contestants",
             "team-leaders",
             "observers"
           ]
@@ -839,7 +827,7 @@
         },
         {
           "time": "20:30 – 21:00",
-          "descriptionHtml": "Top 10 team challenge: 6-10 Teams Debugg Phase",
+          "descriptionHtml": "Transfer to KNUS",
           "locationHtml": "Alem.ai",
           "attendees": [
             "contestants"
@@ -847,7 +835,7 @@
         },
         {
           "time": "20:30 – 22:30",
-          "descriptionHtml": "Transfer to KNUS",
+          "descriptionHtml": "Top 10 team challenge: 1-5 Teams Debugg Phase",
           "locationHtml": "Alem.ai",
           "attendees": [
             "contestants"
@@ -855,18 +843,21 @@
         },
         {
           "time": "21:00 – 23:00",
-          "descriptionHtml": "Transfer to Alem.al",
+          "descriptionHtml": "End of 2nd Round appeals and f2f appeals session Round 2",
           "locationHtml": "KNUS, Red amphitheatre",
           "attendees": [
-            "contestants"
+            "contestants",
+            "team-leaders",
+            "observers"
           ]
         },
         {
           "time": "21:00 – 23:00",
-          "descriptionHtml": "Top 10 team challenge: 1-5 Teams Debugg Phase",
-          "locationHtml": "next to campus hotel",
+          "descriptionHtml": "Huawei Cultural Exchange Day (adults)",
+          "locationHtml": "next to campus hotel drinking",
           "attendees": [
-            "contestants"
+            "team-leaders",
+            "observers"
           ]
         },
         {
@@ -874,7 +865,8 @@
           "descriptionHtml": "Transfer to KNUS",
           "locationHtml": "Alem.ai",
           "attendees": [
-            "contestants"
+            "contestants",
+            "galbot-team"
           ]
         }
       ]
@@ -901,7 +893,8 @@
           "descriptionHtml": "Team challenge top 10 transfer to Alem.ai",
           "locationHtml": "KNUS",
           "attendees": [
-            "contestants"
+            "contestants",
+            "galbot-team"
           ]
         },
         {
@@ -993,7 +986,7 @@
       "note": "KNUS — Kazakh National University of Sports",
       "events": [
         {
-          "time": "All day",
+          "time": "00:00 – 23:59",
           "descriptionHtml": "Transfer to Airport",
           "locationHtml": "KNUS",
           "attendees": [
