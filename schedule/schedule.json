@@ -964,7 +964,7 @@
           ]
         },
         {
-          "time": "15:00 – 17:00",
+          "time": "15:00 – 18:00",
           "descriptionHtml": "Closing and Awards Ceremony",
           "locationHtml": "KNUS, Contest Hall",
           "attendees": [
@@ -975,7 +975,7 @@
           "mandatory": true
         },
         {
-          "time": "17:00 – 19:00",
+          "time": "18:00 – 20:00",
           "descriptionHtml": "Farewell party courtesy of Kaspi.kz",
           "locationHtml": "KNUS, Chill zone",
           "attendees": [
