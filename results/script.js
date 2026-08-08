@@ -10,7 +10,6 @@
     tabs: [...document.querySelectorAll('.track-tab')],
     individualCount: document.getElementById('individual-count'),
     gaiteCount: document.getElementById('gaite-count'),
-    summaryCards: document.getElementById('summary-cards'),
     podium: document.getElementById('podium'),
     search: document.getElementById('search-input'),
     award: document.getElementById('award-filter'),
@@ -62,19 +61,6 @@
       const matchesAward = !state.award || (state.award === '__none__' ? !row.award : row.award === state.award);
       return matchesQuery && matchesAward;
     });
-  }
-
-  function renderSummary() {
-    const rows = currentRows();
-    const countryCount = new Set(rows.map(row => row.country)).size;
-    const awardCount = rows.filter(row => row.award).length;
-    elements.summaryCards.innerHTML = [
-      [rows.length, 'Contestants'],
-      [countryCount, 'Countries & regions'],
-      [awardCount, 'Awards']
-    ].map(([value, label]) =>
-      '<div class="summary-card"><strong class="summary-value">' + scoreFormat.format(value) + '</strong><span class="summary-label">' + label + '</span></div>'
-    ).join('');
   }
 
   function renderPodium() {
@@ -133,7 +119,6 @@
   }
 
   function renderAll() {
-    renderSummary();
     renderPodium();
     renderAwardOptions();
     renderTableHead();
