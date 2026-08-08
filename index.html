@@ -6,7 +6,7 @@
   <title>IOAI 2026 — International Olympiad in Artificial Intelligence | Astana, Kazakhstan</title>
 <meta name="description" content="3rd International Olympiad in Artificial Intelligence. August 2-8, 2026. Astana, Kazakhstan. Register now for the world's newest science olympiad.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;background:#0a0e1a;color:#e2e8f0;min-height:100vh;overflow-x:hidden}
@@ -59,6 +59,18 @@ input,select,textarea,button{font-family:inherit}
 .btn-hero:hover{transform:scale(1.04)}
 .btn-hero-outline{padding:14px 32px;border-radius:12px;cursor:pointer;border:1px solid rgba(255,255,255,0.15);background:rgba(255,255,255,0.05);color:#fff;font-size:16px;font-weight:600}
 .scroll-hint{position:absolute;bottom:30px;left:50%;transform:translateX(-50%);cursor:pointer;animation:bounce 2s infinite}
+
+/* Results spotlight */
+.results-highlight{padding:42px 24px;background:linear-gradient(180deg,rgba(30,250,224,0.035),transparent)}
+.results-callout{position:relative;max-width:1200px;margin:0 auto;display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:center;gap:26px;padding:30px 32px;border:1px solid rgba(30,250,224,0.22);border-radius:22px;background:radial-gradient(circle at 0 50%,rgba(30,250,224,0.13),transparent 38%),rgba(255,255,255,0.04);box-shadow:0 20px 70px rgba(0,0,0,0.18);overflow:hidden}
+.results-callout::after{content:"";position:absolute;width:260px;height:260px;right:-150px;top:-150px;border:1px solid rgba(122,252,238,0.11);border-radius:50%;pointer-events:none}
+.results-callout-icon{width:62px;height:62px;border-radius:17px;display:flex;align-items:center;justify-content:center;color:#061513;background:linear-gradient(135deg,#7AFCEE,#1EFAE0);box-shadow:0 10px 30px rgba(30,250,224,0.2)}
+.results-callout-copy{position:relative;z-index:1}
+.results-callout-kicker{display:block;margin-bottom:7px;color:#7AFCEE;font-size:11px;font-weight:800;letter-spacing:1.2px;text-transform:uppercase}
+.results-callout h2{margin-bottom:7px;color:#fff;font-size:clamp(22px,3vw,32px);font-weight:800;letter-spacing:-0.7px}
+.results-callout p{max-width:680px;color:rgba(255,255,255,0.57);font-size:14px;line-height:1.6}
+.results-callout-btn{position:relative;z-index:1;display:flex;align-items:center;gap:8px;padding:13px 20px;border-radius:11px;color:#061513;background:linear-gradient(135deg,#7AFCEE,#1EFAE0);font-size:14px;font-weight:800;white-space:nowrap;box-shadow:0 8px 28px rgba(30,250,224,0.2);transition:transform .2s,box-shadow .2s}
+.results-callout-btn:hover{transform:translateY(-2px);box-shadow:0 12px 34px rgba(30,250,224,0.28)}
 
 /* About stats */
 .stats-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
@@ -144,12 +156,14 @@ select.form-input option{background:#1a1f2e}
 /* Responsive */
 @media(max-width:768px){
   .nav-links .nav-link:not(.btn-primary):not(.btn-lang){display:none}
+  .nav-inner{padding:0 16px}.nav-links{gap:10px}.nav-logo img{height:40px!important}.nav-links .btn-primary{padding:8px 12px}.btn-lang{padding:6px 10px}
   .form-grid-2,.form-grid-3,.form-grid-2-1{grid-template-columns:1fr}
   .hero-meta{flex-direction:column;gap:8px}
   .countdown{gap:8px}
   .countdown-item{padding:12px 16px;min-width:60px}
   .countdown-val{font-size:28px}
   .stats-grid{grid-template-columns:1fr 1fr}
+  .results-highlight{padding:28px 16px}.results-callout{grid-template-columns:auto minmax(0,1fr);padding:24px;gap:18px}.results-callout-btn{grid-column:1/-1;justify-content:center}.results-callout-icon{width:52px;height:52px;border-radius:14px}
 }
 </style>
 </head>
@@ -333,6 +347,11 @@ function render(){
   const sc=(logo,name,tier,cls,link,imgStyle='',wrapStyle='')=>`<a href="${link}" target="_blank" rel="noopener" class="sponsor-card"><div class="sponsor-logo-wrap" style="${wrapStyle}"><img src="${logo}" alt="${name}" style="max-width:100%;max-height:100%;object-fit:contain${imgStyle?';'+imgStyle:''}"></div><span class="sponsor-tier tier-${cls}">${tier}</span></a>`;
   const ru=lang==='ru';
       const kz=lang==='kz';
+  const resultCopy=ru
+    ?{nav:'Результаты',hero:'Смотреть результаты',kicker:'Финальные результаты',title:'Официальные результаты IOAI 2026',desc:'Итоговая таблица индивидуального конкурса и конкурса GAITE уже опубликована.',cta:'Открыть таблицу'}
+    :kz
+      ?{nav:'Нәтижелер',hero:'Нәтижелерді көру',kicker:'Қорытынды нәтижелер',title:'IOAI 2026 ресми нәтижелері',desc:'Жеке конкурс пен GAITE конкурсының қорытынды кестесі жарияланды.',cta:'Нәтижелерді ашу'}
+      :{nav:'Results',hero:'View results',kicker:'Final standings',title:'Official IOAI 2026 results',desc:'The final standings for the Individual and GAITE contests are now available.',cta:'Explore standings'};
   const gCards_=[
     sc('logos/global_sponsors/janestreet_logo_white.png','Jane Street',kz?'Бриллиант демеуші':ru?'Бриллиантовый спонсор':'Diamond Sponsor','diamond','https://www.janestreet.com/'),
     sc('logos/global_sponsors/Logo-IMC-Blue%20(1).png','IMC',kz?'Бриллиант демеуші':ru?'Бриллиантовый спонсор':'Diamond Sponsor','diamond','https://www.imc.com/eu/'),
@@ -362,6 +381,7 @@ function render(){
     <button class="nav-link" onclick="scrollToSection('contests')">${n.contests}</button>
     <button class="nav-link" onclick="scrollToSection('schedule')">${n.schedule}</button>
     <button class="nav-link" onclick="scrollToSection('ioai2025')">${n.ioai2025}</button>
+    <a class="nav-link btn-primary" href="results/">${resultCopy.nav}</a>
     <button class="btn-lang" onclick="toggleLang()">${icon("globe",14)}${n.lang}</button>
   </div>
 </div></nav>
@@ -375,10 +395,24 @@ function render(){
     <div class="hero-meta"><span style="display:flex;align-items:center;gap:6px">${icon("map-pin")}${h.subtitle}</span><span style="display:flex;align-items:center;gap:6px">${icon("calendar")}${h.dates}</span></div>
     <div id="countdown-container" class="countdown"></div>
     <div class="hero-buttons">
+      <a class="btn-hero" href="results/">${icon("trophy",18)}${resultCopy.hero}</a>
       <button class="btn-hero-outline" onclick="scrollToSection('about')">${h.learnMore}</button>
     </div>
   </div>
   <div class="scroll-hint" onclick="scrollToSection('about')">${icon("chevron-down",28)}</div>
+</section>
+
+<!-- RESULTS SPOTLIGHT -->
+<section class="results-highlight" aria-labelledby="results-highlight-title">
+  <div class="results-callout">
+    <div class="results-callout-icon">${icon("trophy",29)}</div>
+    <div class="results-callout-copy">
+      <span class="results-callout-kicker">${resultCopy.kicker}</span>
+      <h2 id="results-highlight-title">${resultCopy.title}</h2>
+      <p>${resultCopy.desc}</p>
+    </div>
+    <a class="results-callout-btn" href="results/">${resultCopy.cta}${icon("arrow-right",17)}</a>
+  </div>
 </section>
 
 <!-- ABOUT -->
