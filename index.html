@@ -72,6 +72,25 @@ input,select,textarea,button{font-family:inherit}
 .results-callout-btn{position:relative;z-index:1;display:flex;align-items:center;gap:8px;padding:13px 20px;border-radius:11px;color:#061513;background:linear-gradient(135deg,#7AFCEE,#1EFAE0);font-size:14px;font-weight:800;white-space:nowrap;box-shadow:0 8px 28px rgba(30,250,224,0.2);transition:transform .2s,box-shadow .2s}
 .results-callout-btn:hover{transform:translateY(-2px);box-shadow:0 12px 34px rgba(30,250,224,0.28)}
 
+/* Program book */
+.program-book{padding:18px 24px 96px;background:linear-gradient(180deg,transparent,rgba(255,255,255,0.018))}
+.program-book-shell{max-width:1200px;margin:0 auto}
+.program-book-header{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:22px}
+.program-book-copy{max-width:720px}
+.program-book-copy h2{font-size:clamp(28px,4vw,44px);font-weight:800;margin-bottom:12px;letter-spacing:-1px;color:#fff}
+.program-book-copy p{font-size:16px;line-height:1.7;color:rgba(255,255,255,0.62)}
+.program-book-actions{display:flex;align-items:center;gap:12px;flex-wrap:wrap;justify-content:flex-end}
+.program-book-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:12px 16px;border-radius:10px;font-size:14px;font-weight:800;white-space:nowrap;transition:transform .2s,background .2s,border-color .2s}
+.program-book-btn:hover{transform:translateY(-2px)}
+.program-book-btn-primary{color:#061513;background:linear-gradient(135deg,#7AFCEE,#1EFAE0);box-shadow:0 8px 26px rgba(30,250,224,0.18)}
+.program-book-btn-secondary{color:#e2e8f0;border:1px solid rgba(255,255,255,0.16);background:rgba(255,255,255,0.055)}
+.program-book-btn-secondary:hover{background:rgba(255,255,255,0.085);border-color:rgba(255,255,255,0.24)}
+.program-book-reader{position:relative;border:1px solid rgba(255,255,255,0.12);border-radius:18px;overflow:hidden;background:#111827;box-shadow:0 24px 80px rgba(0,0,0,0.28)}
+.program-book-reader::before{content:"";display:block;height:42px;background:linear-gradient(180deg,rgba(255,255,255,0.075),rgba(255,255,255,0.025));border-bottom:1px solid rgba(255,255,255,0.08)}
+.program-book-reader::after{content:"";position:absolute;top:15px;left:18px;width:10px;height:10px;border-radius:50%;background:#ef4444;box-shadow:18px 0 0 #f59e0b,36px 0 0 #22c55e;pointer-events:none}
+.program-book-frame{display:block;width:100%;height:min(78vh,860px);min-height:620px;border:0;background:#1f2937}
+.program-book-fallback{display:flex;min-height:360px;align-items:center;justify-content:center;flex-direction:column;gap:14px;padding:32px;text-align:center;color:rgba(255,255,255,0.68)}
+
 /* About stats */
 .stats-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
 .stat-card{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:16px;padding:24px;text-align:center}
@@ -164,6 +183,7 @@ select.form-input option{background:#1a1f2e}
   .countdown-val{font-size:28px}
   .stats-grid{grid-template-columns:1fr 1fr}
   .results-highlight{padding:28px 16px}.results-callout{grid-template-columns:auto minmax(0,1fr);padding:24px;gap:18px}.results-callout-btn{grid-column:1/-1;justify-content:center}.results-callout-icon{width:52px;height:52px;border-radius:14px}
+  .program-book{padding:10px 16px 72px}.program-book-header{align-items:flex-start;flex-direction:column}.program-book-actions{width:100%;justify-content:flex-start}.program-book-btn{flex:1;min-width:145px}.program-book-reader{border-radius:14px}.program-book-frame{height:68vh;min-height:500px}
 }
 </style>
 </head>
@@ -187,6 +207,9 @@ select.form-input option{background:#1a1f2e}
   <symbol id="icon-user" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></symbol>
   <symbol id="icon-heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></symbol>
   <symbol id="icon-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20M2 12h20"/></symbol>
+  <symbol id="icon-book-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></symbol>
+  <symbol id="icon-download" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V3"/><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/></symbol>
+  <symbol id="icon-external-link" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></symbol>
 </svg>
 
 <div id="contact-popup" onclick="if(event.target===this)hideContactPopup()" style="display:none;position:fixed;inset:0;z-index:200;background:rgba(0,0,0,0.65);backdrop-filter:blur(6px);align-items:center;justify-content:center">
@@ -352,6 +375,12 @@ function render(){
     :kz
       ?{nav:'Нәтижелер',hero:'Нәтижелерді көру',kicker:'Қорытынды нәтижелер',title:'IOAI 2026 ресми нәтижелері',desc:'Жеке конкурс пен GAITE конкурсының қорытынды кестесі жарияланды.',cta:'Нәтижелерді ашу'}
       :{nav:'Results',hero:'View results',kicker:'Final standings',title:'Official IOAI 2026 results',desc:'The final standings for the Individual and GAITE contests are now available.',cta:'Explore standings'};
+  const programBookUrl='assets/IOAI-2026-program-book.pdf';
+  const programCopy=ru
+    ?{tag:'Program book',title:'IOAI 2026 Program Book',desc:'Официальный program book IOAI 2026 в Астане.',open:'Открыть PDF',download:'Скачать PDF',readerTitle:'IOAI 2026 Program Book PDF',fallback:'Браузер не может показать PDF-превью здесь.',fallbackLink:'Открыть program book'}
+    :kz
+      ?{tag:'Program book',title:'IOAI 2026 Program Book',desc:'Астанадағы IOAI 2026 ресми program book.',open:'PDF ашу',download:'PDF жүктеу',readerTitle:'IOAI 2026 Program Book PDF',fallback:'Браузер PDF алдын ала қарауын мұнда көрсете алмайды.',fallbackLink:'Program book ашу'}
+      :{tag:'Program book',title:'IOAI 2026 Program Book',desc:'Official event guide for IOAI 2026 in Astana.',open:'Open PDF',download:'Download PDF',readerTitle:'IOAI 2026 Program Book PDF',fallback:'Your browser cannot display the PDF preview here.',fallbackLink:'Open the program book'};
   const gCards_=[
     sc('logos/global_sponsors/janestreet_logo_white.png','Jane Street',kz?'Бриллиант демеуші':ru?'Бриллиантовый спонсор':'Diamond Sponsor','diamond','https://www.janestreet.com/'),
     sc('logos/global_sponsors/Logo-IMC-Blue%20(1).png','IMC',kz?'Бриллиант демеуші':ru?'Бриллиантовый спонсор':'Diamond Sponsor','diamond','https://www.imc.com/eu/'),
@@ -412,6 +441,31 @@ function render(){
       <p>${resultCopy.desc}</p>
     </div>
     <a class="results-callout-btn" href="results/">${resultCopy.cta}${icon("arrow-right",17)}</a>
+  </div>
+</section>
+
+<!-- PROGRAM BOOK -->
+<section id="program-book" class="program-book" aria-labelledby="program-book-title">
+  <div class="program-book-shell">
+    <div class="program-book-header">
+      <div class="program-book-copy">
+        <div class="tag">${icon("book-open",14)}${programCopy.tag}</div>
+        <h2 id="program-book-title">${programCopy.title}</h2>
+        <p>${programCopy.desc}</p>
+      </div>
+      <div class="program-book-actions">
+        <a class="program-book-btn program-book-btn-primary" href="${programBookUrl}" target="_blank" rel="noopener">${icon("external-link",17)}${programCopy.open}</a>
+        <a class="program-book-btn program-book-btn-secondary" href="${programBookUrl}" download>${icon("download",17)}${programCopy.download}</a>
+      </div>
+    </div>
+    <div class="program-book-reader">
+      <object class="program-book-frame" data="${programBookUrl}#toolbar=1&navpanes=0&view=FitH" type="application/pdf" aria-label="${programCopy.readerTitle}">
+        <div class="program-book-fallback">
+          <p>${programCopy.fallback}</p>
+          <a class="program-book-btn program-book-btn-primary" href="${programBookUrl}" target="_blank" rel="noopener">${icon("external-link",17)}${programCopy.fallbackLink}</a>
+        </div>
+      </object>
+    </div>
   </div>
 </section>
 
